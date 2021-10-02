@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kattinformation</title>
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/modernizr-1.7.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-ui-1.8.16.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
+
+        function refreshHealthDisplay() {
+            var selectedHealthProg = $("#healthProgDropDown").val();
+
+            if (selectedHealthProg == 0) {
+                $('.CatNode').attr('class', function (i, c) {
+                    return c.replace(/\b_Multiple/g, 'Multiple');
+                }
+                );
+            }
+            else {
+                $('.CatNode').attr('class', function (i, c) {
+                    return c.replace(/\bMultiple/g, '_Multiple');
+                }
+                );
+            }
+
+            $('.CatNode').removeClass(function (index, css) {
+                return (css.match(/\bHealthStatus\S+/g) || []).join(' ');
+            });
+            $('.description-details').removeClass(function (index, css) {
+                return (css.match(/\bHealthStatus\S+/g) || []).join(' ');
+            });
+
+            setHealthClass(selectedHealthProg, 1);
+            setHealthClass(selectedHealthProg, 2);
+            setHealthClass(selectedHealthProg, 3);
+            setHealthClass(selectedHealthProg, 4);
+            setHealthClass(selectedHealthProg, 5);
+        }
+
+        function setHealthClass(selectedHealthProg, id) {
+            if (selectedHealthProg > 0) {
+                $("td[healthinfo" + selectedHealthProg + "='" + id + "']").addClass("HealthStatus" + id);
+                $("div[healthinfo" + selectedHealthProg + "='" + id + "']").addClass("HealthStatus" + id);
+            }
+        }
+
+        $(document).ready(function () {
+            $('.health-status-marker').hover(function () {
+                $(this).children('.hover-text').show();
+            }, function () {
+                $(this).children('.hover-text').hide();
+            });
+
+            refreshHealthDisplay();
+        });
+</script>​
+</head>
+<body>
+    <div class="page">
+        <div id="header" class="noprint">
+                <a id="SverakLogo" href="http://www.sverak.se" ><img alt="Kattförbundet Sverak" src="/Content/images/sveraklogo.JPG"/></a>
+                <img id="FindUsLogo" alt="FindUs - Stambok på nätet" src="/Content/images/Findus.jpg"/>
+            <div class="top" id="MenuText">
+                <div class="address"><b>Sveriges Kattklubbars Riksförbund</b><br />Åsbogatan 33, 504 56 Borås 033-10 15 65  fax 033-10 08 99 <a href="mailto:sverak@sverak.se">sverak@sverak.se</a></div>
+<div class="findUsWelcome">Kattförbundet SVERAKs stambok innehåller idag <b>501&#160;968</b> katter.</div>
+
+
+            </div>
+            <br clear="all" />
+            <nav>
+                <ul id="menu">
+                    <li><a href="/">S&#246;k katt</a></li>
+                    <li><a href="/Provparning/Visa">Provparning</a></li>
+                    
+                    <li><a href="http://www.sverak.se/klubbmedlem/findus-stambok-pa-natet/" target="_blank">Om FindUs</a></li>
+                    <li><a href="http://www.sverak.se/id" target="_blank">ID-register</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br clear="all" />
+        <section id="main">
+            
+            
+<div class="description-cat">
+
+<h1 class="border">
+
+    
+    Sylphides Mareshkova
+    
+
+</h1>
+<div class="description-details" >
+<div class="details-row upper">
+    <div class="field-breed">
+        <div class="display-label">
+            Ras
+        </div>
+        <div class="display-field">
+            Russian blue (RUS)
+        </div>
+    </div>
+    <div class="field-born">
+        <div class="display-label">
+            Född
+        </div>
+        <div class="display-field">
+            1964-01-27
+        </div>
+    </div>
+    <div class="field-sex">
+        <div class="display-label">
+            Kön
+        </div>
+        <div class="display-field">
+            Hona
+        </div>
+    </div>
+    <div class="field-ems">
+        <div class="display-label">
+            Ems
+        </div>
+        <div class="display-field">
+             (x)
+        </div>
+    </div>
+</div>
+<div class="details-row">
+    <div class="field-regnr">
+        <div class="display-label">
+            Reg Nummer
+        </div>
+        <div class="display-field">
+(GB)GCCF OS 127558<br/>
+(SE)SVERAK LO 7176<br/>
+        </div>
+    </div>
+    <div class="field-testmating">
+        <div class="display-field">
+            <a href="/Stambok/Avkommor/204563">31 avkommor</a>
+        </div>
+        <br/>
+        <div class="display-label noprint">
+            Provparning
+        </div>
+        <div class="display-field noprint">
+            <a href="/Provparning/Visa/1.204563">som far</a>
+            <br/>
+            <a href="/Provparning/Visa/2.204563">som mor</a>
+        </div>
+    </div>
+    <!--
+    <div class="field-titles">
+        <div class="display-label">
+            Titlar
+        </div>
+        <div class="display-field">
+        </div>
+  </div> 
+      -->
+<form action="/Stambok/Visa/204563" method="get">        <div class="field-inbreeding">
+            <div class="display-label">
+                Inavelsgrad
+            </div>
+            <span class="noprint">
+                <select id="gen" name="gen" onchange="this.form.submit();"><option value="3">3 generationer</option>
+<option selected="selected" value="4">4 generationer</option>
+<option value="5">5 generationer</option>
+<option value="6">6 generationer</option>
+<option value="7">7 generationer</option>
+<option value="8">8 generationer</option>
+</select>
+            </span>
+            <div class="display-field inbreeding-select">
+                <div>
+                    Ber&#228;knad p&#229; 4 generationer: 3,13 %
+                </div>
+                <div>Ber&#228;knat p&#229; 18 av max 30 katter, 17 unika individer</div>
+            </div>
+        </div>
+        <div class="field-healthprog">
+            <div class="display-label">
+                Hälsoprogram
+            </div>
+            <span class="noprint">
+                <select data-val="true" data-val-number="The field Int32 must be a number." data-val-required="The Int32 field is required." id="healthProgDropDown" name="healthProg" onchange="refreshHealthDisplay();" onkeyup="refreshHealthDisplay();"><option selected="selected" value="0">Inget valt</option>
+<option value="1">HCM (MyBPC3)</option>
+<option value="2">GM2/HEXB</option>
+<option value="3">GSD IV</option>
+<option value="4">PK</option>
+<option value="5">PRA</option>
+<option value="6">PKD1</option>
+<option value="7">GM1</option>
+<option value="8">GM2</option>
+<option value="9">HCM/RCM</option>
+<option value="10">BHD</option>
+<option value="11">HK</option>
+<option value="12">MPSVI</option>
+<option value="13">SMA</option>
+<option value="14">CMS</option>
+<option value="15">RAG</option>
+<option value="16">NJUR</option>
+<option value="17">&#214;GONSPEGLING</option>
+</select>
+            </span>
+        </div>
+</form></div>
+</div>
+</div>
+<div class="pedigree-header">
+    <h1>Stamtavla</h1>
+</div>
+<table class="tree-table" id="TableTree">
+    <tr>
+        <td class="parent tree-row-odd CatNode" colspan="3" >
+            <div class="tree-node-id">
+                1
+            </div>
+            <span class="relationship-marker">Far</span><br />
+            <a href="/Stambok/Visa/90763">Archon Nicolo</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF 100458 SR          
+        </td>
+    </tr>
+    <tr>
+        <td class="parent tree-row-even CatNode" colspan="3" >
+            <div class="tree-node-id">
+                2
+            </div>
+            <span class="relationship-marker">Mor</span><br />
+            <a href="/Stambok/Visa/90764">Sylphides Mavilova</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF 101987
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="4" class="CatNode tree-row-odd" >
+    <div class="tree-node-id">
+        3
+    </div>
+        <span class="relationship-marker">Farfar</span><br />
+    <a href="/Stambok/Visa/204554">Dunloe Silvertoes</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 040492
+</td>
+<td rowspan="2" class="CatNode tree-row-odd" >
+    <div class="tree-node-id">
+        7
+    </div>
+    <a href="/Stambok/Visa/204552">Dunloe Blue Socks</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 035273
+</td>
+<td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        15
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        16
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2" class="CatNode tree-row-odd" >
+    <div class="tree-node-id">
+        8
+    </div>
+    <a href="/Stambok/Visa/204553">Gedling Mokey</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 034576
+</td>
+<td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        17
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        18
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+
+    </tr>
+
+    </tr>
+    <tr>
+        <td rowspan="4" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        4
+    </div>
+        <span class="relationship-marker">Farmor</span><br />
+    <a href="/Stambok/Visa/204557">Archon Paprika</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 083564 SR
+</td>
+<td rowspan="2" class="CatNode Multiple1 tree-row-even" >
+    <div class="tree-node-id">
+        9
+    </div>
+    <a href="/Stambok/Visa/204555">Dunloe Domokvitch</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 058888
+</td>
+<td rowspan="1" class="UnknownNode tree-row-even" >
+    <div class="tree-node-id">
+        19
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-even" >
+    <div class="tree-node-id">
+        20
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        10
+    </div>
+    <a href="/Stambok/Visa/204556">Antonia</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 062016 SR
+</td>
+<td rowspan="1" class="UnknownNode tree-row-even" >
+    <div class="tree-node-id">
+        21
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-even" >
+    <div class="tree-node-id">
+        22
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+
+    </tr>
+
+    </tr>
+    <tr>
+        <td rowspan="4" class="CatNode tree-row-odd" >
+    <div class="tree-node-id">
+        5
+    </div>
+        <span class="relationship-marker">Morfar</span><br />
+    <a href="/Stambok/Visa/204559">Yaroslavl</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 096693
+</td>
+<td rowspan="2" class="CatNode Multiple1 tree-row-odd" >
+    <div class="tree-node-id">
+        11
+    </div>
+    <a href="/Stambok/Visa/204555">Dunloe Domokvitch</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 058888
+</td>
+<td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        23
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        24
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2" class="CatNode tree-row-odd" >
+    <div class="tree-node-id">
+        12
+    </div>
+    <a href="/Stambok/Visa/204558">Legionnaire La Vedette</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 052462
+</td>
+<td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        25
+    </div>
+    &nbsp;
+</td>
+    <tr>
+        <td rowspan="1" class="UnknownNode tree-row-odd" >
+    <div class="tree-node-id">
+        26
+    </div>
+    &nbsp;
+</td>
+
+    </tr>
+
+    </tr>
+
+    </tr>
+    <tr>
+        <td rowspan="4" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        6
+    </div>
+        <span class="relationship-marker">Mormor</span><br />
+    <a href="/Stambok/Visa/204562">Terushka Tanya</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 093774
+</td>
+<td rowspan="2" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        13
+    </div>
+    <a href="/Stambok/Visa/204560">Meadliam Cheiron</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 078493
+</td>
+<td rowspan="1" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        27
+    </div>
+    <a href="/Stambok/Visa/204649">Oscar</a>
+    <br />(GB)GCCF OS 068796
+</td>
+    <tr>
+        <td rowspan="1" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        28
+    </div>
+    <a href="/Stambok/Visa/204650">Dunloe Blue Cap</a>
+    <br />(GB)GCCF OS 065563
+</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        14
+    </div>
+    <a href="/Stambok/Visa/204561">Terrydwina</a>
+    <br />RUS x &middot; 
+    <br />(GB)GCCF OS 86811 SR
+</td>
+<td rowspan="1" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        29
+    </div>
+    <a href="/Stambok/Visa/204653">Czarlyne Silber-Mish</a>
+    <br />(GB)GCCF OS 075871 SR
+</td>
+    <tr>
+        <td rowspan="1" class="CatNode tree-row-even" >
+    <div class="tree-node-id">
+        30
+    </div>
+    <a href="/Stambok/Visa/204652">Bellemonta Sonia</a>
+    <br />(GB)GCCF OS 083052 SR
+</td>
+
+    </tr>
+
+    </tr>
+
+    </tr>
+</table>
+            
+            <script type="text/javascript">
+                $(function () {
+                    var moveLeft = 0;
+                    var moveDown = 0;
+                    $('a.popper').hover(function (e) {
+
+                        var target = '#' + ($(this).attr('data-popbox'));
+
+                        $(target).show();
+                        moveLeft = $(this).outerWidth();
+                        moveDown = ($(target).outerHeight() / 2);
+                    }, function () {
+                        var target = '#' + ($(this).attr('data-popbox'));
+                        $(target).hide();
+                    });
+
+                    $('a.popper').mousemove(function (e) {
+                        var target = '#' + ($(this).attr('data-popbox'));
+
+                        leftD = e.pageX + parseInt(moveLeft);
+                        maxRight = leftD + $(target).outerWidth();
+                        windowLeft = $(window).width() - 40;
+                        windowRight = 0;
+                        maxLeft = e.pageX - (parseInt(moveLeft) + $(target).outerWidth() + 20);
+
+                        if (maxRight > windowLeft && maxLeft > windowRight) {
+                            leftD = maxLeft;
+                        }
+
+                        topD = e.pageY - parseInt(moveDown);
+                        maxBottom = parseInt(e.pageY + parseInt(moveDown) + 20);
+                        windowBottom = parseInt(parseInt($(document).scrollTop()) + parseInt($(window).height()));
+                        maxTop = topD;
+                        windowTop = parseInt($(document).scrollTop());
+                        if (maxBottom > windowBottom) {
+                            topD = windowBottom - $(target).outerHeight() - 20;
+                        } else if (maxTop < windowTop) {
+                            topD = windowTop + 20;
+                        }
+
+                        $(target).css('top', topD).css('left', leftD);
+                    });
+                });
+            </script>
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
