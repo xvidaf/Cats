@@ -4,13 +4,15 @@ from bs4 import BeautifulSoup # Parsing html
 import requests #Easy, juts gets the source
 import openpyxl #Writing to excel
 import pandas
+import os
+import time
 
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-def getCatAttributes(url):
+def getCatAttributes(url,cats):
     # Requests
     page = requests.get(url)
     with open('site.html', 'wb+') as f:
@@ -39,33 +41,51 @@ def getCatAttributes(url):
     catFur = catAttributes[3].text.strip()
     catNumber = catAttributes[4].text.strip()
     """
+    """
     catAttributesList = [soup.select('h1.border')[0].text.strip(),
         catAttributes[0].text.strip(),
         catAttributes[1].text.strip(),
         catAttributes[2].text.strip(),
         catAttributes[3].text.strip(),
         catAttributes[4].text.strip().replace("\n", " ").replace("\r", " ")]
-    with file as f:
-        for x in catAttributesList:
-            f.write(str(x) + "###")
-        f.write("\n")
-
+    """
+    newRow = pandas.Series({'Name' : soup.select('h1.border')[0].text.strip(),
+        'Breed' : catAttributes[0].text.strip(),
+        'Birth' : catAttributes[1].text.strip(),
+        'Gender' : catAttributes[2].text.strip(),
+        'Fur' : catAttributes[3].text.strip(),
+        'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " ")})
+    print(newRow)
+    return newRow
 def readCats():
     with open('cat.txt') as f:
         lines = f.readlines()
         for x in lines:
             print(x.strip().split("###"))
 
+def check_for_csv():
+    if not os.path.exists("cat.csv"):
+        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number'])
+        df.to_csv('cat.csv', mode='w')
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    catName = []  # List to store the name of the cat
     #Test Urls
     url1 = "http://stambok.sverak.se/Stambok/Visa/538"
     url2 = "http://stambok.sverak.se/Stambok/Visa/205375"
     url3 = "http://stambok.sverak.se/Stambok/Visa/204563"
     file = open("cat.txt", 'a')
-    getCatAttributes(url3)
-    readCats()
+    check_for_csv()
+    cats = pandas.read_csv("cat.csv", index_col=0)
+    print(cats)
+    cats = cats.append(getCatAttributes(url1, cats), ignore_index=True)
+    time.sleep(10)
+    cats = cats.append(getCatAttributes(url2, cats), ignore_index=True)
+    time.sleep(10)
+    cats = cats.append(getCatAttributes(url3, cats), ignore_index=True)
+    print(cats)
+    cats.to_csv('cat.csv', mode='w')
+    #readCats()
     file.close()
 
 
