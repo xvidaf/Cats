@@ -7,11 +7,6 @@ import pandas
 import os
 import time
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
 def getCatAttributes(url,cats):
     # Requests
     page = requests.get(url)
@@ -49,43 +44,63 @@ def getCatAttributes(url,cats):
         catAttributes[3].text.strip(),
         catAttributes[4].text.strip().replace("\n", " ").replace("\r", " ")]
     """
+    # Get The father Name
+    father = soup.find('td', class_={"parent tree-row-odd CatNode", "parent tree-row-odd UnknownNode"})
+    mother = soup.find('td', class_={"parent tree-row-even CatNode", "parent tree-row-even UnknownNode"})
+    fatherLink = father.find('a', href=True)
+    motherLink = mother.find('a', href=True)
+    fatherName = ' '.join(father.text.splitlines()[-2].split())  # Split the id from the string and remove tab
+    motherName = ' '.join(mother.text.splitlines()[-2].split())  # Split the id from the string and remove tab
+    try:
+        print(fatherLink['href'])
+        print(fatherName)
+    except:
+        print("Macka nema Father")
+        fatherName = ""
+    try:
+        print(motherLink['href'])
+        print(motherName)
+    except:
+        print("Macka nema Mother")
+        motherName = ""
     newRow = pandas.Series({'Name' : soup.select('h1.border')[0].text.strip(),
         'Breed' : catAttributes[0].text.strip(),
         'Birth' : catAttributes[1].text.strip(),
         'Gender' : catAttributes[2].text.strip(),
         'Fur' : catAttributes[3].text.strip(),
-        'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " ")})
+        'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
+        'Father' : fatherName,
+        'Mother' : motherName})
     print(newRow)
     return newRow
-def readCats():
-    with open('cat.txt') as f:
-        lines = f.readlines()
-        for x in lines:
-            print(x.strip().split("###"))
 
 def check_for_csv():
     if not os.path.exists("cat.csv"):
-        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number'])
+        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Father', 'Mother'])
         df.to_csv('cat.csv', mode='w')
+
+def read_cats():
+    if os.path.exists("cat.csv"):
+       print(pandas.read_csv("cat.csv", index_col=0))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    #TODO ENCODING FOR SWEDISH ?
+    #TODO ADD ALL CATS TROUGH PARENTS
+    #TODO CHECK IF CAT IS ALREADY IN
     #Test Urls
+    baseUrl = "http://stambok.sverak.se"
     url1 = "http://stambok.sverak.se/Stambok/Visa/538"
     url2 = "http://stambok.sverak.se/Stambok/Visa/205375"
     url3 = "http://stambok.sverak.se/Stambok/Visa/204563"
+    url4 = "http://stambok.sverak.se/Stambok/Visa/204552"
     file = open("cat.txt", 'a')
     check_for_csv()
     cats = pandas.read_csv("cat.csv", index_col=0)
-    print(cats)
-    cats = cats.append(getCatAttributes(url1, cats), ignore_index=True)
-    time.sleep(10)
-    cats = cats.append(getCatAttributes(url2, cats), ignore_index=True)
-    time.sleep(10)
+    #print(cats)
     cats = cats.append(getCatAttributes(url3, cats), ignore_index=True)
-    print(cats)
     cats.to_csv('cat.csv', mode='w')
-    #readCats()
+    read_cats()
     file.close()
 
 
