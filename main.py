@@ -7,7 +7,7 @@ import pandas
 import os
 import time
 
-def getCatAttributes(url,cats):
+def getCatAttributes(url,cats, newCats, baseUrl):
     # Requests
     page = requests.get(url)
     with open('site.html', 'wb+') as f:
@@ -63,7 +63,7 @@ def getCatAttributes(url,cats):
     except:
         print("Macka nema Mother")
         motherName = ""
-    newRow = pandas.Series({'Name' : soup.select('h1.border')[0].text.strip(),
+    newRow = ({'Name' : soup.select('h1.border')[0].text.strip(),
         'Breed' : catAttributes[0].text.strip(),
         'Birth' : catAttributes[1].text.strip(),
         'Gender' : catAttributes[2].text.strip(),
@@ -71,8 +71,15 @@ def getCatAttributes(url,cats):
         'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
         'Father' : fatherName,
         'Mother' : motherName})
-    print(newRow)
-    return newRow
+    newCats.append(newRow)
+    #print(newRow)
+    if fatherName != "":
+        time.sleep(3)
+        getCatAttributes(baseUrl + fatherLink['href'], cats, newCats, baseUrl)
+    if motherName != "":
+        time.sleep(3)
+        getCatAttributes(baseUrl + motherLink['href'], cats, newCats, baseUrl)
+    return
 
 def check_for_csv():
     if not os.path.exists("cat.csv"):
@@ -86,21 +93,24 @@ def read_cats():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #TODO ENCODING FOR SWEDISH ?
-    #TODO ADD ALL CATS TROUGH PARENTS
     #TODO CHECK IF CAT IS ALREADY IN
     #Test Urls
     baseUrl = "http://stambok.sverak.se"
     url1 = "http://stambok.sverak.se/Stambok/Visa/538"
     url2 = "http://stambok.sverak.se/Stambok/Visa/205375"
     url3 = "http://stambok.sverak.se/Stambok/Visa/204563"
-    url4 = "http://stambok.sverak.se/Stambok/Visa/204552"
+    url4 = "http://stambok.sverak.se/Stambok/Visa/90763"
     file = open("cat.txt", 'a')
     check_for_csv()
     cats = pandas.read_csv("cat.csv", index_col=0)
     #print(cats)
-    cats = cats.append(getCatAttributes(url3, cats), ignore_index=True)
+    newCats = []
+    getCatAttributes(url4, cats, newCats, baseUrl)
+    newCats = pandas.DataFrame(newCats)
+    print(newCats)
+    cats = cats.append(newCats, ignore_index=True)
     cats.to_csv('cat.csv', mode='w')
-    read_cats()
+    #read_cats()
     file.close()
 
 
