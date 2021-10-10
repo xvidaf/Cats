@@ -6,9 +6,16 @@ import openpyxl #Writing to excel
 import pandas
 import os
 import time
+import re
 
-def getCatAttributes(url,cats, newCats, baseUrl):
+def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls):
     # Requests
+    print(url)
+    if url in listOfUrls:
+        print("Same url found!")
+        return
+    else:
+        listOfUrls.append(url)
     page = requests.get(url)
     with open('site.html', 'wb+') as f:
         f.write(page.content)
@@ -45,8 +52,8 @@ def getCatAttributes(url,cats, newCats, baseUrl):
         catAttributes[4].text.strip().replace("\n", " ").replace("\r", " ")]
     """
     # Get The father Name
-    father = soup.find('td', class_={"parent tree-row-odd CatNode", "parent tree-row-odd UnknownNode"})
-    mother = soup.find('td', class_={"parent tree-row-even CatNode", "parent tree-row-even UnknownNode"})
+    father = soup.find('td', class_={re.compile('.*parent tree-row-odd CatNode.*'), re.compile('.*parent tree-row-odd UnknownNode.*')})
+    mother = soup.find('td', class_={re.compile('.*parent tree-row-even CatNode.*'),re.compile('.*parent tree-row-even UnknownNode.*')})
     fatherLink = father.find('a', href=True)
     motherLink = mother.find('a', href=True)
     fatherName = ' '.join(father.text.splitlines()[-2].split())  # Split the id from the string and remove tab
@@ -75,10 +82,10 @@ def getCatAttributes(url,cats, newCats, baseUrl):
     #print(newRow)
     if fatherName != "":
         time.sleep(3)
-        getCatAttributes(baseUrl + fatherLink['href'], cats, newCats, baseUrl)
+        getCatAttributes(baseUrl + fatherLink['href'], cats, newCats, baseUrl, listOfUrls)
     if motherName != "":
         time.sleep(3)
-        getCatAttributes(baseUrl + motherLink['href'], cats, newCats, baseUrl)
+        getCatAttributes(baseUrl + motherLink['href'], cats, newCats, baseUrl, listOfUrls)
     return
 
 def check_for_csv():
@@ -105,7 +112,8 @@ if __name__ == '__main__':
     cats = pandas.read_csv("cat.csv", index_col=0)
     #print(cats)
     newCats = []
-    getCatAttributes(url4, cats, newCats, baseUrl)
+    listOfUrls = []
+    getCatAttributes(url1, cats, newCats, baseUrl, listOfUrls)
     newCats = pandas.DataFrame(newCats)
     print(newCats)
     cats = cats.append(newCats, ignore_index=True)
