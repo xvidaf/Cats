@@ -8,7 +8,7 @@ import os
 import time
 import re
 
-def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls):
+def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls, p):
     # Requests
     print(url)
     if url in listOfUrls:
@@ -70,25 +70,26 @@ def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls):
     except:
         print("Macka nema Mother")
         motherName = ""
-    newRow = ({'Name' : soup.select('h1.border')[0].text.strip(),
-        'Breed' : catAttributes[0].text.strip(),
-        'Birth' : catAttributes[1].text.strip(),
-        'Gender' : catAttributes[2].text.strip(),
-        'Fur' : catAttributes[3].text.strip(),
-        'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
-        'Father' : fatherName,
-        'Mother' : motherName})
+    newRow = ({'Name': p.sub("", soup.select('h1.border')[0].text).strip(),
+               'Breed': catAttributes[0].text.strip(),
+               'Birth': catAttributes[1].text.strip(),
+               'Gender': catAttributes[2].text.strip(),
+               'Fur': catAttributes[3].text.strip(),
+               'Number': catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
+               'Title': ",".join(re.findall(p, soup.select('h1.border')[0].text.strip())),
+               'Father': fatherName,
+               'Mother': motherName})
     newCats.append(newRow)
     #print(newRow)
     if fatherName != "":
         time.sleep(3)
-        getCatAttributes(baseUrl + fatherLink['href'], cats, newCats, baseUrl, listOfUrls)
+        getCatAttributes(baseUrl + fatherLink['href'], cats, newCats, baseUrl, listOfUrls, p)
     if motherName != "":
         time.sleep(3)
-        getCatAttributes(baseUrl + motherLink['href'], cats, newCats, baseUrl, listOfUrls)
+        getCatAttributes(baseUrl + motherLink['href'], cats, newCats, baseUrl, listOfUrls, p)
     return
 
-def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls):
+def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls, p):
     # Requests
     print(url)
     if url in listOfUrls:
@@ -128,12 +129,13 @@ def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls):
     except:
         print("Macka nema Mother")
         motherName = ""
-    newRow = ({'Name' : soup.select('h1.border')[0].text.strip(),
+    newRow = ({'Name' : p.sub("", soup.select('h1.border')[0].text).strip(),
         'Breed' : catAttributes[0].text.strip(),
         'Birth' : catAttributes[1].text.strip(),
         'Gender' : catAttributes[2].text.strip(),
         'Fur' : catAttributes[3].text.strip(),
         'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
+        'Title' : ",".join(re.findall(p, soup.select('h1.border')[0].text.strip())),
         'Father' : fatherName,
         'Mother' : motherName})
     newCats.append(newRow)
@@ -142,11 +144,11 @@ def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls):
 
 def check_for_csv():
     if not os.path.exists("cat.csv"):
-        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Father', 'Mother'])
+        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Title', 'Father', 'Mother'])
         df.to_csv('cat.csv', mode='w')
     if not os.path.exists("counter.txt"):
         f = open('counter.txt', 'w')
-        f.write('%d' % 0)
+        f.write('%d' % 1)
 
 def getCounter():
     f = open('counter.txt', 'r')
@@ -164,7 +166,7 @@ def incrementPage(baseUrl, counter1):
 
 def writeCounter(counter):
     f = open('counter.txt', 'w')
-    f.write('%d' % int(counter - 1))
+    f.write('%d' % int(counter))
     f.close()
 
 # Press the green button in the gutter to run the script.
@@ -183,6 +185,8 @@ if __name__ == '__main__':
     counter = getCounter()
     newCats = []
     listOfUrls = []
+    listOfTitles = ["CH", "P", "IC", "IP", "GIC", "GIP", "EC", "EP", "SC", "SP", "JW", "DSM", "DVM", "NW", "WW", "RW", "Int.", "Ch", "Cham", "RW", "CH", "GCH", "DGCH", "TGCH", "QGCH"]
+    p = re.compile(r'\b(?:%s)\b' % '|'.join(listOfTitles)) #For regex searching
     print("Welcome to the cat retrieval program")
     print("Current counter is " + str(counter))
     print("Choose wisely")
@@ -202,7 +206,7 @@ if __name__ == '__main__':
                     url = incrementPage(baseUrl, counter)
                     counter = incrementCounter(counter)
                     time.sleep(3)
-                    getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls)
+                    getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
                 newCats = pandas.DataFrame(newCats)
                 # print(newCats)
                 cats = cats.append(newCats, ignore_index=True)
@@ -215,7 +219,7 @@ if __name__ == '__main__':
                     url = incrementPage(baseUrl, counter)
                     counter = incrementCounter(counter)
                     time.sleep(3)
-                    getCatAttributes(url, cats, newCats, baseUrl, listOfUrls)
+                    getCatAttributes(url, cats, newCats, baseUrl, listOfUrls, p)
                 newCats = pandas.DataFrame(newCats)
                 # print(newCats)
                 cats = cats.append(newCats, ignore_index=True)

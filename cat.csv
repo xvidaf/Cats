@@ -1,21 +1,73 @@
-,Name,Breed,Birth,Gender,Fur,Number,Father,Mother
-0,"IC
-    Praha Singh",Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-1,"IC
-    Praha Hou-Tho",Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-2,"CH
-    Neko De Lao-Tsun of Gayland",Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,(FR)LOF 2429,(US)CFA 0183-000005 V99
-3,"CH
-    Opale de Khlaramour",Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,(FR)LOF 1838,(FR)LOF Riex 1061
-4,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-5,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
-6,"IC
-    Praha Singh",Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-7,"IC
-    Praha Hou-Tho",Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-8,"CH
-    Neko De Lao-Tsun of Gayland",Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,(FR)LOF 2429,(US)CFA 0183-000005 V99
-9,"CH
-    Opale de Khlaramour",Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,(FR)LOF 1838,(FR)LOF Riex 1061
-10,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-11,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+,Name,Breed,Birth,Gender,Fur,Number,Title,Father,Mother
+0,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,"IC,P",(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+1,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,"IC,P",(GB)GCCF OS 161638,(GB)GCCF OS 145502
+2,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
+3,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
+4,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
+5,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+6,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
+7,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+8,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+9,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,,(FR)LOF 2429,(US)CFA 0183-000005 V99
+10,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,,(FR)LOF 1838,(FR)LOF Riex 1061
+11,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
+12,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+13,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
+14,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+15,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+16,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
+17,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
+18,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
+19,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+20,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
+21,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+22,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+23,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,,(FR)LOF 2429,(US)CFA 0183-000005 V99
+24,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,,(FR)LOF 1838,(FR)LOF Riex 1061
+25,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
+26,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+27,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
+28,Praha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+29,Praha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+30,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
+31,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
+32,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
+33,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
+34,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
+35,Urooj af Silverbäcken,Helig birma (SBI),1972-04-08,Hane,blåmaskad (a),(SE)SVERAK LO 16539,IC,(SE)SVERAK LO 12311,(SE)SVERAK LO 14012
+36,Praha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+37,Pipo de Clos Fleuri,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 152530*IMP-F,,(FR)LOF 2429,(PT)CPF LO 1152
+38,Hamlet de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2429  ACH 2054,,(FR)LOF 2047,(FR)LOF 1851
+39,El Dinn de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2047,,(FR)LOF 2854,SBI x ·
+40,Yogui de Kaabaa,Helig birma (SBI),,Hane,(x),(FR)LOF 2854,,(FR)LOF 2190,(FR)LOF 2815
+41,Orloff de Kaabaa,Helig birma (SBI),,Hane,(x),(FR)LOF 2190,,,
+42,Xenia de Kaabaa,Helig birma (SBI),,Hona,(x),(FR)LOF 2815,,,
+43,Chimene de Madalpour,Helig birma (SBI),,Hona,(x),,,,
+44,Egerie de Madalpour,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF 1851,,(FR)LOF 2854,(FR)LOF 1547
+45,Cathou de Madalpour,Helig birma (SBI),,Hona,(x),(FR)LOF 1547,,,
+46,Jacynthe de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(PT)CPF LO 1152,,(FR)LOF 7853,(PT)CFP 1086
+47,Giglio des Muses,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 7853  (FR)UNAF 49,,(FR)LOF UNAF 24,(FR)LOF 1852
+48,Catteleya des Muses,Helig birma (SBI),,Hane,(x),(FR)LOF UNAF 24,,,
+49,Edmme de Madalpour,Helig birma (SBI),,Hona,(x),(FR)LOF 1852,,,
+50,Iris de Clos Fleuri,Helig birma (SBI),,Hona,brunmaskad (n),(PT)CFP 1086,,(FR)LOF 2429,(FR)LOF UNAF 64
+51,Hilka des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF UNAF 64,,(FR)LOF UNAF 24,SBI x ·
+52,Eddine de Madalpour,Helig birma (SBI),,Hona,(x),,,,
+53,Paranjoti Katmandu,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 152950,CH,(GB)GCCF OS 140035,(GB)GCCF OS 145502
+54,Nouky de Mon Reve,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 8080  (GB)GCCF OS 140035,,(FR)LOF Riex 822,(FR)LOF 4233
+55,Marquis de Crespieres,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF Riex 822,,(FR)LOF Riex 285,(FR)LOF Riex 404
+56,Jumbo de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hane,(x),(FR)LOF Riex 285,,(FR)LOF Reix 29,(FR)LOF Reix 1
+57,Eloi,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF Reix 29,,(FR)LOF 2854,(FR)LOF 1547
+58,Eve de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hona,(x),(FR)LOF Reix 1,,,
+59,Kora de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hona,(x),(FR)LOF Riex 404,,(FR)LOF Reix 29,(FR)LOF Reix 1
+60,Dorothea de Crespieres,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF 4233,,(FR)LOF 2974,(FR)LOF 3658
+61,Cesar des Brosses,Helig birma (SBI),,Hane,(x),(FR)LOF 2974,,,
+62,Cosima des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF 3658,,,
+63,Osaka de Lugh,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 145502  (PT)CFP 2847,,(FR)LOF 2429,(FR)LOF CFP 2364
+64,Nady de Lugh,Helig birma (SBI),,Hona,blåmaskad (a),(FR)LOF CFP 2364,,(FR)LOF CFP 1409,(FR)LOF CFP 2007
+65,Kathou de Khlaramour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF CFP 1409,,(FR)LOF 2429,(FR)LOF 7854
+66,Graziella des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF 7854,,(FR)LOF UNAF 24,SBI x ·
+67,Duchess Anne,Helig birma (SBI),,Hona,(x),,,,
+68,Lliane de Lugh,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF CFP 2007,,(FR)LOF CFP 1409,(FR)LOF CFP 979
+69,Isabel de Sandricourt,Helig birma (SBI),,Hona,(x),(FR)LOF CFP 979,,,
+70,Praha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+71,Praha Sik-Kim,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 161638,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 145502
