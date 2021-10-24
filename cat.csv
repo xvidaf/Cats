@@ -1,73 +1,493 @@
 ,Name,Breed,Birth,Gender,Fur,Number,Title,Father,Mother
-0,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,"IC,P",(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-1,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,"IC,P",(GB)GCCF OS 161638,(GB)GCCF OS 145502
+0,Praha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
+1,Praha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
 2,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
 3,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
 4,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
 5,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
 6,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
-7,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-8,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-9,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,,(FR)LOF 2429,(US)CFA 0183-000005 V99
-10,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,,(FR)LOF 1838,(FR)LOF Riex 1061
-11,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-12,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
-13,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
-14,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-15,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-16,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
-17,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
-18,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-19,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
-20,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
-21,raha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-22,raha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-23,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,,(FR)LOF 2429,(US)CFA 0183-000005 V99
-24,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,,(FR)LOF 1838,(FR)LOF Riex 1061
-25,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-26,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
-27,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
-28,Praha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-29,Praha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-30,Neko De Lao-Tsun of Gayland,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000004 V99,CH,(FR)LOF 2429,(US)CFA 0183-000005 V99
-31,Opale de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0181-000025 V98,CH,(FR)LOF 1838,(FR)LOF Riex 1061
-32,Gaylands Quiff of Griswold,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000005 V101,,(US)CFA 0182-000004 V99,(US)CFA 0183-000001 V99
-33,Griswold Sanshu of Duvall,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000038 V102,,(US)CFA 0180-000001 V95,(US)CFA 0187-000003 V100
-34,Gentiana's Gwenny,Helig birma (SBI),1968-07-22,Hona,brunmaskad (n),(NL)NKS 20-223  (SE)SVERAK RX 12314,,(NL)NKS 6081,(NL)NKS 6082
-35,Urooj af Silverbäcken,Helig birma (SBI),1972-04-08,Hane,blåmaskad (a),(SE)SVERAK LO 16539,IC,(SE)SVERAK LO 12311,(SE)SVERAK LO 14012
-36,Praha Singh,Helig birma (SBI),1968-05-25,Hane,brunmaskad (n),(GB)GCCF OS 170064  (SE)SVERAK LO 12311,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152950
-37,Pipo de Clos Fleuri,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 152530*IMP-F,,(FR)LOF 2429,(PT)CPF LO 1152
-38,Hamlet de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2429  ACH 2054,,(FR)LOF 2047,(FR)LOF 1851
-39,El Dinn de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2047,,(FR)LOF 2854,SBI x ·
-40,Yogui de Kaabaa,Helig birma (SBI),,Hane,(x),(FR)LOF 2854,,(FR)LOF 2190,(FR)LOF 2815
-41,Orloff de Kaabaa,Helig birma (SBI),,Hane,(x),(FR)LOF 2190,,,
-42,Xenia de Kaabaa,Helig birma (SBI),,Hona,(x),(FR)LOF 2815,,,
-43,Chimene de Madalpour,Helig birma (SBI),,Hona,(x),,,,
-44,Egerie de Madalpour,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF 1851,,(FR)LOF 2854,(FR)LOF 1547
-45,Cathou de Madalpour,Helig birma (SBI),,Hona,(x),(FR)LOF 1547,,,
-46,Jacynthe de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(PT)CPF LO 1152,,(FR)LOF 7853,(PT)CFP 1086
-47,Giglio des Muses,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 7853  (FR)UNAF 49,,(FR)LOF UNAF 24,(FR)LOF 1852
-48,Catteleya des Muses,Helig birma (SBI),,Hane,(x),(FR)LOF UNAF 24,,,
-49,Edmme de Madalpour,Helig birma (SBI),,Hona,(x),(FR)LOF 1852,,,
-50,Iris de Clos Fleuri,Helig birma (SBI),,Hona,brunmaskad (n),(PT)CFP 1086,,(FR)LOF 2429,(FR)LOF UNAF 64
-51,Hilka des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF UNAF 64,,(FR)LOF UNAF 24,SBI x ·
-52,Eddine de Madalpour,Helig birma (SBI),,Hona,(x),,,,
-53,Paranjoti Katmandu,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 152950,CH,(GB)GCCF OS 140035,(GB)GCCF OS 145502
-54,Nouky de Mon Reve,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 8080  (GB)GCCF OS 140035,,(FR)LOF Riex 822,(FR)LOF 4233
-55,Marquis de Crespieres,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF Riex 822,,(FR)LOF Riex 285,(FR)LOF Riex 404
-56,Jumbo de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hane,(x),(FR)LOF Riex 285,,(FR)LOF Reix 29,(FR)LOF Reix 1
-57,Eloi,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF Reix 29,,(FR)LOF 2854,(FR)LOF 1547
-58,Eve de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hona,(x),(FR)LOF Reix 1,,,
-59,Kora de Crespieres,EJ GODKÄND LÅNGHÅR (XLH),,Hona,(x),(FR)LOF Riex 404,,(FR)LOF Reix 29,(FR)LOF Reix 1
-60,Dorothea de Crespieres,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF 4233,,(FR)LOF 2974,(FR)LOF 3658
-61,Cesar des Brosses,Helig birma (SBI),,Hane,(x),(FR)LOF 2974,,,
-62,Cosima des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF 3658,,,
-63,Osaka de Lugh,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 145502  (PT)CFP 2847,,(FR)LOF 2429,(FR)LOF CFP 2364
-64,Nady de Lugh,Helig birma (SBI),,Hona,blåmaskad (a),(FR)LOF CFP 2364,,(FR)LOF CFP 1409,(FR)LOF CFP 2007
-65,Kathou de Khlaramour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF CFP 1409,,(FR)LOF 2429,(FR)LOF 7854
-66,Graziella des Muses,Helig birma (SBI),,Hona,(x),(FR)LOF 7854,,(FR)LOF UNAF 24,SBI x ·
-67,Duchess Anne,Helig birma (SBI),,Hona,(x),,,,
-68,Lliane de Lugh,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF CFP 2007,,(FR)LOF CFP 1409,(FR)LOF CFP 979
-69,Isabel de Sandricourt,Helig birma (SBI),,Hona,(x),(FR)LOF CFP 979,,,
-70,Praha Hou-Tho,Helig birma (SBI),1969-06-18,Hona,blåmaskad (a),(GB)GCCF OS 188506  (SE)SVERAK LO 14012,IC,(GB)GCCF OS 161638,(GB)GCCF OS 145502
-71,Praha Sik-Kim,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 161638,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 145502
+7,Urooj af Silverbäcken,Helig birma (SBI),1972-04-08,Hane,blåmaskad (a),(SE)SVERAK LO 16539,IC,(SE)SVERAK LO 12311,(SE)SVERAK LO 14012
+8,Griswold's Tearia,Helig birma (SBI),1970-06-26,Hona,blåmaskad (a),(SE)SVERAK LO 16126  (US)CFA 0187-000013,IC,(US)CFA 0182-000004 V99,(US)CFA 0181-000025 V98
+9,Duvall's Tao,Helig birma (SBI),1970-06-20,Hane,brunmaskad (n),(SE)SVERAK LO 16125  (US)CFA 0182-000027,IC,(US)CFA 0182-000005 V101,(US)CFA 0183-000038 V102
+10,Yauri af Silverbäcken,Helig birma (SBI),1972-08-06,Hona,brunmaskad (n),(SE)SVERAK LO 16858,,(SE)SVERAK LO 12311,(SE)SVERAK RX 12314
+11,Sinh Faffa af Silverbäcken,Helig birma (SBI),1973-04-04,Hane,blåmaskad (a),(SE)SVERAK LO 18214,IC,(SE)SVERAK LO 16539,(SE)SVERAK LO 16126
+12,Sinh Sabrina af Silverbäcken,Helig birma (SBI),1974-10-29,Hona,brunmaskad (n),(SE)SVERAK LO 20297,,(SE)SVERAK LO 16125,(SE)SVERAK LO 16858
+13,Gentiana's Mouche,Helig birma (SBI),1967-04-01,Hona,brunmaskad (n),(NL)NKS 6675  (SE)SVERAK RX 12312,CH,(NL)NKS 6081,(NL)NKS 6082
+14,Pipo de Clos Fleuri,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 152530*IMP-F,,(FR)LOF 2429,(PT)CPF LO 1152
+15,Paranjoti Katmandu,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 152950,CH,(GB)GCCF OS 140035,(GB)GCCF OS 145502
+16,Or de Crespieres,Helig birma (SBI),,Hane,brunmaskad (n),(NL)NKS 6081,,(FR)LOF Riex 822,SBI x ·
+17,Ombre de Crespieres,Helig birma (SBI),,Hona,brunmaskad (n),(NL)NKS 6082,,SBI x ·,SBI x ·
+18,Sinh Ester af Silverbäcken,Helig birma (SBI),1969-06-20,Hona,brunmaskad (n),(SE)SVERAK LO 12802,,(SE)SVERAK LO 12311,(SE)SVERAK RX 12312
+19,Sinh Pagai af Silverbäcken,Helig birma (SBI),,Hane,brunmaskad (n),(SE)SVERAK LO 20014,,(SE)SVERAK LO 16125,(SE)SVERAK LO 12802
+20,Krischan von Assindia,Helig birma (SBI),,Hane,blåmaskad (a),(DE)DEV B 570,IC,(US)CFA 0180-000014-PR 2,(FR)LOF Riex 1162
+21,Smokeyhill Mai-Ling,Helig birma (SBI),1968-04-27,Hona,brunmaskad (n),(GB)GCCF OS 169730  (SE)SVERAK LO 12316,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152947
+22,Paranjoti Kimsallie,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 152947,CH,(GB)GCCF OS 140035,(GB)GCCF OS 140034
+23,Raida af Silverbäcken,Helig birma (SBI),1972-03-16,Hona,brunmaskad (n),(SE)SVERAK LO 16537,,(SE)SVERAK LO 16125,(SE)SVERAK LO 12802
+24,Praha Sik-Kim,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 161638,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 145502
+25,Osaka de Lugh,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 145502  (PT)CFP 2847,,(FR)LOF 2429,(FR)LOF CFP 2364
+26,Solstadens Blue Ming,Helig birma (SBI),1969-07-03,Hane,blåmaskad (a),(SE)SVERAK LO 14008,IC,(DE)DEV B 570,(SE)SVERAK LO 12316
+27,Sinh Magadi af Silverbäcken,Helig birma (SBI),,Hona,brunmaskad (n),(SE)SVERAK LO 20008,,(SE)SVERAK LO 12311,(SE)SVERAK LO 16537
+28,Praha Michel,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 218288,CH,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 152950
+29,Praha Mi Wa,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 204777,,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+30,Thu Chia's Shiraz,Helig birma (SBI),,Hane,brunmaskad (n),(SE)SVERAK LO 20908,,(SE)SVERAK LO 14008,(SE)SVERAK LO 20008
+31,Praha Addy,Helig birma (SBI),1974-04-12,Hona,brunmaskad (n),(GB)GCCF NS 012415  (SE)SVERAK LO 20059,,(GB)GCCF OS 218288,(GB)GCCF OS 204777
+32,Smokeyhill Lah Ling,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 218872,,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 189362
+33,Smokeyhill Leona Chinka,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 189362,CH,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152947
+34,Sinh Saga-Ell af Silverbäcken,Helig birma (SBI),1969-06-20,Hona,brunmaskad (n),(SE)SVERAK LO 12803,,(SE)SVERAK LO 12311,(SE)SVERAK RX 12312
+35,Salwana Alpha,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 012803,,(GB)GCCF OS 161638,(GB)GCCF OS 218872
+36,Smokeyhill Ming Tah,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 241704,,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 189362
+37,Chinospin's Minh Thodin,Helig birma (SBI),1970-06-15,Hane,blåmaskad (a),(SE)SVERAK LO 14581,IC,(SE)SVERAK LO 14140,(SE)SVERAK LO 12803
+38,Solstadens Blue Asahina,Helig birma (SBI),1970-10-26,Hona,blåmaskad (a),(SE)SVERAK LO 14803,CH,(SE)SVERAK LO 14008,(SE)SVERAK LO 12316
+39,Salwana Chetu,Helig birma (SBI),1975-02-24,Hane,brunmaskad (n),(GB)GCCF NS 023118  (SE)SVERAK LO 20936,IC,(GB)GCCF NS 012803,(GB)GCCF OS 241704
+40,Hassellidens Cindra,Helig birma (SBI),1973-08-07,Hona,blåmaskad (a),(SE)SVERAK LO 18480,,(SE)SVERAK LO 14581,(SE)SVERAK LO 14803
+41,Sinh Nanda af Silverbäcken,Helig birma (SBI),1976-10-11,Hona,brunmaskad (n),(SE)SVERAK LO 22861,,(SE)SVERAK LO 18214,(SE)SVERAK LO 20297
+42,Sinh Paletwa af Silverbäcken,Helig birma (SBI),1977-03-04,Hona,brunmaskad (n),(SE)SVERAK LO 24012,,(SE)SVERAK LO 20014,(SE)SVERAK LO 12802
+43,Juveniles Taiwan,Helig birma (SBI),1977-03-03,Hane,brunmaskad (n),(SE)SVERAK LO 24020,,(SE)SVERAK LO 20908,(SE)SVERAK LO 20059
+44,Hassellidens Thai,Helig birma (SBI),1977-04-05,Hane,brunmaskad (n),(SE)SVERAK LO 24024,IC,(SE)SVERAK LO 20936,(SE)SVERAK LO 18480
+45,Querida de Crespieres,Helig birma (SBI),,Hona,brunmaskad (n),(NL)NKS 6684,,(FR)LOF 8661,(FR)LOF 8801
+46,Izmir du Petit Serail,Helig birma (SBI),1969-01-15,Hane,brunmaskad (n),(NL)NKS 20-357  (SE)SVERAK LO 14140,IC,(DE)DEV B 570,(NL)NKS 6684
+47,Smokeyhill Kwai Ling,Helig birma (SBI),1974-08-19,Hane,blåmaskad (a),(GB)GCCF NS 014799  (SE)SVERAK LO 20711,IC,(GB)GCCF NS 012803,(GB)GCCF OS 238653
+48,Smokeyhill Soo Myling,Helig birma (SBI),1974-03-31,Hona,brunmaskad (n),(GB)GCCF OS 265989  (SE)SVERAK LO 20710,IC,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 189362
+49,Chinospin's Minh Wisjnu,Helig birma (SBI),1972-04-20,Hane,brunmaskad (n),(SE)SVERAK LO 16617,IC,(SE)SVERAK LO 14140,(SE)SVERAK LO 12803
+50,Cheapthrills Janis,Helig birma (SBI),1975-07-18,Hona,brunmaskad (n),(SE)SVERAK LO 20786,"IP,,,IC",(SE)SVERAK LO 20711,(SE)SVERAK LO 20710
+51,Cheapthrills Salomo,Helig birma (SBI),1977-05-05,Hane,brunmaskad (n),(SE)SVERAK LO 24283,IC,(SE)SVERAK LO 16617,(SE)SVERAK LO 20786
+52,Gentiana's Perry,Helig birma (SBI),1968-07-22,Hane,brunmaskad (n),(NL)NKS 20-219  (SE)SVERAK RX 12313,,(NL)NKS 6081,(NL)NKS 6082
+53,Rosine de Pouh-Miloh,Helig birma (SBI),1968-04-05,Hona,brunmaskad (n),(FR)FFF RX R2462  (SE)SVERAK RX 12799,,(FR)LOF R932,(FR)LOF R667
+54,Sinh Edina af Silverbäcken,Helig birma (SBI),1970-09-02,Hona,brunmaskad (n),(SE)SVERAK LO 14645,,(SE)SVERAK LO 12311,(SE)SVERAK RX 12314
+55,Fornhöjdens Albert,Helig birma (SBI),1973-01-25,Hane,brunmaskad (n),(SE)SVERAK RX 18070,,(SE)SVERAK RX 12313,(SE)SVERAK RX 12799
+56,Cochise Anemone,Helig birma (SBI),1972-06-25,Hona,brunmaskad (n),(SE)SVERAK LO 16770,IC,(SE)SVERAK LO 14140,(SE)SVERAK LO 14645
+57,Fornhöjdens Darmagne,Helig birma (SBI),1974-01-08,Hona,brunmaskad (n),(SE)SVERAK LO 18796,,(SE)SVERAK RX 18070,(SE)SVERAK LO 16770
+58,Darmagne's Blue Francesco,Helig birma (SBI),1978-01-01,Hane,blåmaskad (a),(SE)SVERAK LO 24832,IC,(SE)SVERAK LO 20936,(SE)SVERAK LO 18796
+59,Fornhöjdens Alexander,Helig birma (SBI),1973-01-25,Hane,brunmaskad (n),(SE)SVERAK RX 18068,,(SE)SVERAK RX 12313,(SE)SVERAK RX 12799
+60,Sinh Labelle af Silverbäcken,Helig birma (SBI),1971-11-22,Hona,brunmaskad (n),(SE)SVERAK LO 16400,,(SE)SVERAK LO 12311,(SE)SVERAK RX 12314
+61,Sinh Elgena af Silverbäcken,Helig birma (SBI),1976-02-18,Hona,brunmaskad (n),(SE)SVERAK LO 22217,,(SE)SVERAK RX 18068,(SE)SVERAK LO 16400
+62,Kattlangarna's Chainpur,Helig birma (SBI),1978-06-14,Hane,brunmaskad (n),(SE)SVERAK LO 24960 B,,(SE)SVERAK LO 24283,(SE)SVERAK LO 22217
+63,El Dinn de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2047,,(FR)LOF 2854,SBI x ·
+64,Egerie de Madalpour,Helig birma (SBI),,Hona,brunmaskad (n),(FR)LOF 1851,,(FR)LOF 2854,(FR)LOF 1547
+65,Giglio des Muses,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 7853  (FR)UNAF 49,,(FR)LOF UNAF 24,(FR)LOF 1852
+66,Iris de Clos Fleuri,Helig birma (SBI),,Hona,brunmaskad (n),(PT)CFP 1086,,(FR)LOF 2429,(FR)LOF UNAF 64
+67,Qui-Ly-Khan de Ranchipur,Helig birma (SBI),,Hane,brunmaskad (n),(DE)DEV B 585*IMP,IC,(FR)LOF 8661,(FR)LOF R1517
+68,Iris von Assindia,Helig birma (SBI),,Hona,brunmaskad (n),(DE)DEV B 563,IC,(FR)LOF 1861,(FR)LOF Riex 1162
+69,Ghandi von Assindia,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF OS 186204 *IMP,,(DE)DEV B 570,(FR)LOF Riex 1162
+70,Gunga Khinmyayin,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 189396,,(GB)GCCF OS 161638,(GB)GCCF OS 162946
+71,Hamlet de Madalpour,Helig birma (SBI),,Hane,brunmaskad (n),(FR)LOF 2429  ACH 2054,,(FR)LOF 2047,(FR)LOF 1851
+72,Jacynthe de Khlaramour,Helig birma (SBI),,Hona,blåmaskad (a),(PT)CPF LO 1152,,(FR)LOF 7853,(PT)CFP 1086
+73,Koomtai Jasmine,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 214924,,(GB)GCCF OS 186204 *IMP,(GB)GCCF OS 189396
+74,Solomon von Assindia,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 208747 *IMP-D,,(DE)DEV B 585*IMP,(DE)DEV B 563
+75,Talmin Gold Leaf,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 245647,CH,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 214924
+76,Patrioona Fidelio,Helig birma (SBI),1977-05-29,Hane,brunmaskad (n),(GB)GCCF NS 054140  (SE)SVERAK LO 26320,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 245647
+77,Praha Hu-Tsung,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 188501,CH,(GB)GCCF OS 161638,(GB)GCCF OS 145502
+78,Sinh Bidde af Silverbäcken,Helig birma (SBI),1969-11-13,Hona,brunmaskad (n),(SE)SVERAK LO 14155,CH,(SE)SVERAK LO 12311,(SE)SVERAK RX 12314
+79,Smokeyhill Nhan Leequon,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 238653,,(GB)GCCF OS 188501,(GB)GCCF OS 152947
+80,Sinh Kaigo af Silverbäcken,Helig birma (SBI),1973-12-08,Hane,brunmaskad (n),(SE)SVERAK LO 18790,IC,(SE)SVERAK LO 16125,(SE)SVERAK LO 14155
+81,Fornhöjdens Alexandra,Helig birma (SBI),1973-01-25,Hona,brunmaskad (n),(SE)SVERAK RX 18069,,(SE)SVERAK RX 12313,(SE)SVERAK RX 12799
+82,Sweet Valley's Queen Erotica,Helig birma (SBI),1972-11-02,Hona,brunmaskad (n),(SE)SVERAK LO 22755,,(SE)SVERAK LO 18790,(SE)SVERAK RX 18069
+83,Sinh Zecilia af Silverbäcken,Helig birma (SBI),1978-02-17,Hona,brunmaskad (n),(SE)SVERAK LO 24892,,(SE)SVERAK LO 18214,(SE)SVERAK LO 12802
+84,Fairy Queen's Alexandra,Helig birma (SBI),1979-05-03,Hona,blåmaskad (a),(SE)SVERAK LO 28093 A,,(SE)SVERAK LO 24832,(SE)SVERAK LO 24892
+85,Sinh Frida af Silverbäcken,Helig birma (SBI),1978-05-20,Hona,brunmaskad (n),(SE)SVERAK LO 24935 B,,(SE)SVERAK LO 18214,(SE)SVERAK LO 20297
+86,Blossom's Amore,Helig birma (SBI),1979-09-12,Hane,brunmaskad (n),(SE)SVERAK LO 30068,CH,(SE)SVERAK LO 24283,(SE)SVERAK LO 24935 B
+87,Hassellidens Hannah,Helig birma (SBI),1975-08-27,Hona,brunmaskad (n),(SE)SVERAK LO 20783,,(SE)SVERAK LO 18789,(SE)SVERAK LO 16538
+88,Hassellidens Darje,Helig birma (SBI),1978-07-05,Hane,blåmaskad (a),(SE)SVERAK LO 24953 B,IC,(SE)SVERAK LO 24024,(SE)SVERAK LO 24023
+89,Hassellidens Raina,Helig birma (SBI),1977-04-22,Hona,blåmaskad (a),(SE)SVERAK LO 24023,,(SE)SVERAK LO 20936,(SE)SVERAK LO 20783
+90,Juveniles Shivey,Helig birma (SBI),,Hona,blåmaskad (a),(SE)SVERAK LO 22514 B,IC,(SE)SVERAK LO 20908,(SE)SVERAK LO 20059
+91,Juveniles Fatima,Helig birma (SBI),1979-11-10,Hona,blåmaskad (a),(SE)SVERAK LO 30262,,(SE)SVERAK LO 24953 B,(SE)SVERAK LO 22514 B
+92,Rosenkorsborgen Blue King,Helig birma (SBI),1978-09-23,Hane,blåmaskad (a),(SE)SVERAK LO 26354,IC,(SE)SVERAK LO 20711,(SE)SVERAK LO 22755
+93,Cheapthrills Blue Hannibal Hayes,Helig birma (SBI),1980-02-29,Hane,blåmaskad (a),(SE)SVERAK LO 30631,CH,(SE)SVERAK LO 26354,(SE)SVERAK LO 20710
+94,Hassellidens Céli,Helig birma (SBI),1978-08-21,Hona,brunmaskad (n),(SE)SVERAK LO 26302,,(SE)SVERAK LO 20936,(SE)SVERAK LO 18480
+95,Hassellidens Blue Qatchin,Helig birma (SBI),1980-03-23,Hane,blåmaskad (a),(SE)SVERAK LO 30636,,(SE)SVERAK LO 18214,(SE)SVERAK LO 26302
+96,Praha Shivey Mu,Helig birma (SBI),1970-07-11,Hona,blåmaskad (a),(GB)GCCF OS 204779  (SE)SVERAK LO 14942,CH,(GB)GCCF OS 188501,(GB)GCCF OS 189013
+97,Rabackens Shakuntala,Helig birma (SBI),1972-05-07,Hona,blåmaskad (a),(SE)SVERAK LO 16657,,(SE)SVERAK LO 14008,(SE)SVERAK LO 14942
+98,Juveniles Shakira,Helig birma (SBI),1976-01-16,Hona,blåmaskad (a),(SE)SVERAK LO 22064,IC,(SE)SVERAK LO 16617,(SE)SVERAK LO 16657
+99,Mossekullens Chari,Helig birma (SBI),1980-04-11,Hane,blåmaskad (a),(SE)SVERAK LO 32045,CH,(SE)SVERAK LO 24953 B,(SE)SVERAK LO 22064
+100,Cheapthrills Loella,Helig birma (SBI),1980-08-30,Hona,brunmaskad (n),(SE)SVERAK LO 32854,,(SE)SVERAK LO 24283,(SE)SVERAK LO 20710
+101,Rainy af Silverbäcken,Helig birma (SBI),1972-03-16,Hona,brunmaskad (n),(SE)SVERAK LO 16538,IC,(SE)SVERAK LO 16125,(SE)SVERAK LO 12802
+102,Hassellidens Laiza,Helig birma (SBI),1976-04-13,Hona,brunmaskad (n),(SE)SVERAK LO 22239,,(SE)SVERAK LO 20936,(SE)SVERAK LO 16538
+103,Hassellidens Ceasar,Helig birma (SBI),1978-08-21,Hane,brunmaskad (n),(SE)SVERAK LO 26301,IC,(SE)SVERAK LO 20936,(SE)SVERAK LO 18480
+104,"PR
+    Krusestorps Cerina",Helig birma (SBI),1978-05-30,Hona,brunmaskad (n),(SE)SVERAK LO 26321,",,IC",(SE)SVERAK LO 26320,(SE)SVERAK LO 22239
+105,Trollehöjds Herkules,Helig birma (SBI),1980-08-22,Hane,brunmaskad (n),(SE)SVERAK LO 32877,CH,(SE)SVERAK LO 26301,(SE)SVERAK LO 26321
+106,Sinh Fredrika af Silverbäcken,Helig birma (SBI),1978-05-20,Hona,brunmaskad (n),(SE)SVERAK LO 24936 B,,(SE)SVERAK LO 18214,(SE)SVERAK LO 20297
+107,Mischief Trevino,Helig birma (SBI),1980-01-23,Hona,brunmaskad (n),(SE)SVERAK LO 34119,,(SE)SVERAK LO 18790,(SE)SVERAK LO 24936 B
+108,Praha Mantra,Helig birma (SBI),1968-06-22,Hona,brunmaskad (n),(GB)GCCF OS 177711  (SE)SVERAK LO 12150,IC,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 145502
+109,Eliza-San av Drotten,Helig birma (SBI),1972-01-30,Hona,brunmaskad (n),(SE)SVERAK LO 16490,IC,(SE)SVERAK LO 14140,(SE)SVERAK LO 12150
+110,Hvens Basthi,Helig birma (SBI),1977-08-21,Hona,brunmaskad (n),(SE)SVERAK LO 24389,,(SE)SVERAK LO 16617,(SE)SVERAK LO 16490
+111,Hassellidens Yami,Helig birma (SBI),1981-02-21,Hona,brunmaskad (n),(SE)SVERAK LO 34184,,(SE)SVERAK LO 24024,(SE)SVERAK LO 24389
+112,Sinh Jaora af Silverbäcken,Helig birma (SBI),1976-05-17,Hona,brunmaskad (n),(SE)SVERAK LO 22135,,(SE)SVERAK LO 20014,(SE)SVERAK LO 16858
+113,Apollon,Helig birma (SBI),1978-06-09,Hane,brunmaskad (n),(SE)SVERAK LO 24987 B,CH,(SE)SVERAK LO 24283,(SE)SVERAK LO 22135
+114,Fairy Queen's Daphne,Helig birma (SBI),1981-02-21,Hona,brunmaskad (n),(SE)SVERAK LO 34505,,(SE)SVERAK LO 24987 B,(SE)SVERAK LO 24892
+115,Darmagne's Asterix,Helig birma (SBI),1975-04-05,Hane,brunmaskad (n),(SE)SVERAK LO 20713,IC,(SE)SVERAK LO 16617,(SE)SVERAK LO 18796
+116,Darmagne's Gwendolyn,Helig birma (SBI),1978-04-21,Hona,brunmaskad (n),(SE)SVERAK LO 24922 B,,(SE)SVERAK LO 20713,(SE)SVERAK LO 24012
+117,Balthazar,Helig birma (SBI),1981-02-09,Hane,brunmaskad (n),(SE)SVERAK LO 34518,IC,(SE)SVERAK LO 24832,(SE)SVERAK LO 24922 B
+118,Änghagens Afrodite,Helig birma (SBI),1981-03-10,Hona,brunmaskad (n),(SE)SVERAK LO 34536,CH,(SE)SVERAK LO 24020,(SE)SVERAK LO 30262
+119,Hassellidens Miko,Helig birma (SBI),1973-11-13,Hane,brunmaskad (n),(SE)SVERAK LO 18789,,(SE)SVERAK LO 16276,(SE)SVERAK LO 16377
+120,Hassellidens Jennie,Helig birma (SBI),1979-09-01,Hona,blåmaskad (a),(SE)SVERAK LO 30023,,(SE)SVERAK LO 24024,(SE)SVERAK LO 20783
+121,Muntaz Mahal's Ami,Helig birma (SBI),1981-07-17,Hona,blåmaskad (a),(SE)SVERAK LO 36295,IC,(SE)SVERAK LO 30636,(SE)SVERAK LO 30023
+122,Cherie-San av Drotten,Helig birma (SBI),1971-03-04,Hona,brunmaskad (n),(SE)SVERAK LO 14964,,(SE)SVERAK LO 14140,(SE)SVERAK LO 14167
+123,Katschin Aisa,Helig birma (SBI),1973-08-16,Hona,brunmaskad (n),(SE)SVERAK LO 18722,,(SE)SVERAK LO 14581,(SE)SVERAK LO 14964
+124,Sinh Xenti af Silverbäcken,Helig birma (SBI),1977-08-14,Hona,brunmaskad (n),(SE)SVERAK LO 24804,,(SE)SVERAK LO 18214,(SE)SVERAK LO 20297
+125,Fjordkattens Blå Oliver,Helig birma (SBI),1980-11-09,Hane,blåmaskad (a),(SE)SVERAK LO 34115,CH,(SE)SVERAK LO 26354,(SE)SVERAK LO 18722
+126,Moränens Bianca,Helig birma (SBI),1979-07-31,Hona,brunmaskad (n),(SE)SVERAK LO 30010,,(SE)SVERAK LO 24283,(SE)SVERAK LO 24804
+127,Katitzi,Helig birma (SBI),1981-11-04,Hona,blåmaskad (a),(SE)SVERAK LO 36704,,(SE)SVERAK LO 34115,(SE)SVERAK LO 30010
+128,Kattlangarna's Darwha,Helig birma (SBI),1979-03-27,Hona,brunmaskad (n),(SE)SVERAK LO 28039,,(SE)SVERAK LO 24283,(SE)SVERAK LO 22217
+129,"PR
+    Kattekronan's Cupido",Helig birma (SBI),1982-01-02,Hane,brunmaskad (n),(SE)SVERAK LO 36788,",,GIC",(SE)SVERAK LO 32877,(SE)SVERAK LO 28039
+130,Cheapthrills Blue Isabelle,Helig birma (SBI),1980-05-29,Hona,blåmaskad (a),(SE)SVERAK LO 32072,,(SE)SVERAK LO 24832,(SE)SVERAK LO 20786
+131,Cheapthrills Rozzy Blue,Helig birma (SBI),1982-03-09,Hona,blåmaskad (a),(SE)SVERAK LO 36869,GIC,(SE)SVERAK LO 30631,(SE)SVERAK LO 32072
+132,Sinh Padilla af Silverbäcken,Helig birma (SBI),1974-06-07,Hona,brunmaskad (n),(SE)SVERAK LO 20016,,(SE)SVERAK LO 16125,(SE)SVERAK LO 12802
+133,Diamond Head Belinda,Helig birma (SBI),1982-04-25,Hona,brunmaskad (n),(SE)SVERAK LO 40025,,(SE)SVERAK LO 24960 B,(SE)SVERAK LO 20016
+134,Shaminka Houdini,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 223810,,(GB)GCCF OS 186747,(GB)GCCF OS 200748
+135,Pisces,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 013205,CH,(GB)GCCF OS 223810,(GB)GCCF OS 244238
+136,Patrioona Faust,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 024383,CH,(GB)GCCF OS 245420,(GB)GCCF OS 245647
+137,Sahra Jupiter,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 245420,CH,(GB)GCCF OS 161638,(GB)GCCF OS 214997
+138,Boisland Abigail,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 053657,,(GB)GCCF OS 223810,(GB)GCCF NS 013205
+139,Belleview Angeline,Helig birma (SBI),1978-03-31,Hona,blåmaskad (a),(GB)GCCF NS 095538  (SE)SVERAK LO 28065,,(GB)GCCF NS 024383,(GB)GCCF NS 053657
+140,Mossekullens Fay,Helig birma (SBI),1982-05-28,Hona,brunmaskad (n),(SE)SVERAK LO 40067,,(SE)SVERAK LO 24020,(SE)SVERAK LO 28065
+141,Änghagens Amy,Helig birma (SBI),1981-03-10,Hona,brunmaskad (n),(SE)SVERAK LO 34537,,(SE)SVERAK LO 24020,(SE)SVERAK LO 30262
+142,Änghagens Calixtus,Helig birma (SBI),1982-07-21,Hane,blåmaskad (a),(SE)SVERAK LO 40233,,(SE)SVERAK LO 30636,(SE)SVERAK LO 34537
+143,Sahra Soleil Bleu,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 013169,CH,(GB)GCCF OS 244412,(GB)GCCF OS 214997
+144,Dirkkusch van Smellinghe,Helig birma (SBI),,Hane,brunmaskad (n),(NL)NKS 22-235,IC,(DE)DEZV B 628,(NL)NKS 20-728
+145,Anja von Assindia,Helig birma (SBI),,Hona,brunmaskad (n),(NL)NKS 22-613 *IMP-DE,CH,(DE)DEV B 585*IMP,(DE)DEZV B 568
+146,Halloween Amon Ra,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 186747,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 146412
+147,Praha Kao,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 200748,,(GB)GCCF OS 161638,(GB)GCCF OS 146411
+148,Praha Goa,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 162946,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 140034
+149,Smokeyhill Kwang Lie,Helig birma (SBI),,Hane,blåmaskad (a),(NL)NKS 24-799*IMP-GB,IC,(GB)GCCF NS 013169,(GB)GCCF OS 189362
+150,Aagje van de Snoezepoesjes,Helig birma (SBI),,Hona,brunmaskad (n),(NL)NKS 23-176 *IMP-NL,IC,(NL)NKS 22-235,(NL)NKS 22-613 *IMP-DE
+151,Gunga Opal,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 200572,CH,(GB)GCCF OS 161638,(GB)GCCF OS 162946
+152,Miorama Mata Hari,Helig birma (SBI),,Hona,brunmaskad (n),(AU)GCSA 4781 *IMP-GB GCCF,,(GB)GCCF OS 223810,(GB)GCCF OS 200572
+153,Charmeur van de Snoezepoesjes,Helig birma (SBI),,Hane,brunmaskad (n),(AU)GCSA 4784  (AUS)CFA (N) 55960,,(NL)NKS 24-799*IMP-GB,(NL)NKS 23-176 *IMP-NL
+154,Badarene Touché,Helig birma (SBI),1981-09-15,Hane,brunmaskad (n),(AU)GCSA 4794  (SE)SVERAK LO 40458,,(AUS)CFA (N) 55960,(AU)GCSA 4781 *IMP-GB GCCF
+155,Hymes Brown Jesra,Helig birma (SBI),,Hane,brunmaskad (n),(NO)NRR LO 21669,CH,(GB)GCCF NS 035840,(NO)NRR LO 21667
+156,Trollehöjds Celene,Helig birma (SBI),1980-04-17,Hona,brunmaskad (n),(SE)SVERAK LO 32071,,(NO)NRR LO 21669,(SE)SVERAK LO 26321
+157,Trollehöjds Cathalee,Helig birma (SBI),1981-05-17,Hona,brunmaskad (n),(SE)SVERAK LO 36216,,(SE)SVERAK LO 26301,(SE)SVERAK LO 32071
+158,Trollehöjds Natanael,Helig birma (SBI),1983-03-11,Hane,brunmaskad (n),(SE)SVERAK LO 40616,IC,(SE)SVERAK LO 32877,(SE)SVERAK LO 36216
+159,Heligholms Prinssessan,Helig birma (SBI),1978-05-29,Hona,brunmaskad (n),(SE)SVERAK LO 26309,,(SE)SVERAK LO 20711,(SE)SVERAK LO 22861
+160,Rosenkorsborgen Foxtrot Queen,Helig birma (SBI),1982-02-18,Hona,brunmaskad (n),(SE)SVERAK LO 36832,,(SE)SVERAK LO 24283,(SE)SVERAK LO 22755
+161,Heffners Herbert,Helig birma (SBI),1982-04-01,Hane,brunmaskad (n),(SE)SVERAK LO 40007,,(SE)SVERAK LO 26354,(SE)SVERAK LO 26309
+162,Aramis,Helig birma (SBI),1983-06-09,Hane,brunmaskad (n),(SE)SVERAK LO 40657,,(SE)SVERAK LO 40007,(SE)SVERAK LO 36832
+163,Rallarrosen's Blue Chips,Helig birma (SBI),1983-07-12,Hona,blåmaskad (a),(SE)SVERAK LO 40715,,(SE)SVERAK LO 26354,(SE)SVERAK LO 22861
+164,"PR
+    Miorama Blue Star",Helig birma (SBI),1978-07-25,Hane,blåmaskad (a),(GB)GCCF NS 111793  (SE)SVERAK LO 28524,,(GB)GCCF NS 013169,(GB)GCCF NS 091452
+165,Hassellidens Ninou,Helig birma (SBI),1976-08-17,Hona,blåmaskad (a),(SE)SVERAK LO 22659,,(SE)SVERAK LO 20936,(SE)SVERAK LO 18480
+166,Hassellidens Blue Leqita,Helig birma (SBI),1979-09-01,Hona,blåmaskad (a),(SE)SVERAK LO 30020,,(SE)SVERAK LO 28524,(SE)SVERAK LO 22659
+167,Biancas Leonora,Helig birma (SBI),1978-06-17,Hona,brunmaskad (n),(SE)SVERAK LO 24974 B,,(SE)SVERAK LO 20711,(SE)SVERAK LO 24001
+168,Sinh Qaiyi af Silverbäcken,Helig birma (SBI),1977-03-14,Hona,brunmaskad (n),(SE)SVERAK LO 24001,,(SE)SVERAK LO 12311,(SE)SVERAK LO 16126
+169,Hammardalens Elena,Helig birma (SBI),1982-02-25,Hona,brunmaskad (n),(SE)SVERAK LO 36852,,(SE)SVERAK LO 32877,(SE)SVERAK LO 30020
+170,Silverlidens Snökristallen,Helig birma (SBI),1981-04-06,Hane,blåmaskad (a),(SE)SVERAK LO 36020,,(SE)SVERAK LO 32045,(SE)SVERAK LO 24974 B
+171,Amic,Helig birma (SBI),1983-07-24,Hona,blåmaskad (a),(SE)SVERAK LO 40774,IC,(SE)SVERAK LO 36020,(SE)SVERAK LO 36852
+172,Paranjoti Kuomintang,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 152946,,(GB)GCCF OS 140035,(GB)GCCF OS 140034
+173,Arbaybi Kari Camilla,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 014643,CH,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 244239
+174,Rojodanco Arbaybi,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 256529,,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 189962
+175,Cragland Jeanette,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 244239,,(GB)GCCF OS 186204 *IMP,(GB)GCCF OS 208740
+176,Chenorine Jonnandra,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 189962,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF OS 152946
+177,Menelik Arbaybi Adonis,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 094719,,(GB)GCCF NS 012803,(GB)GCCF NS 014643
+178,Arbaybi Kwanela,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 019210,,(GB)GCCF OS 256529,(GB)GCCF OS 244239
+179,Arbaybi Prima Donna,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 159202,,(GB)GCCF NS 094719,(GB)GCCF NS 019210
+180,Arbaybi Bashful Beau,Helig birma (SBI),1982-09-25,Hane,blåmaskad (a),(GB)GCCF NS 211435  (SE)SVERAK LO 40906,"EP,,,EC",(GB)GCCF OS 256529,(GB)GCCF NS 159202
+181,Hassellidens Blue Lady,Helig birma (SBI),1979-09-01,Hona,blåmaskad (a),(SE)SVERAK LO 30022,,(SE)SVERAK LO 28524,(SE)SVERAK LO 22659
+182,Trollehöjds Gilda,Helig birma (SBI),1982-02-21,Hona,brunmaskad (n),(SE)SVERAK LO 36904,,(SE)SVERAK LO 32877,(SE)SVERAK LO 30022
+183,Trollehöjds Pontus,Helig birma (SBI),1983-08-16,Hane,brunmaskad (n),(SE)SVERAK LO 50019,,(SE)SVERAK LO 32877,(SE)SVERAK LO 36904
+184,Hassellidens Vanessa,Helig birma (SBI),1980-10-13,Hona,brunmaskad (n),(SE)SVERAK LO 34103,,(SE)SVERAK LO 24024,(SE)SVERAK LO 16538
+185,Gamleby's Bébé,Helig birma (SBI),1984-03-12,Hona,brunmaskad (n),(SE)SVERAK LO 50140,GIC,(SE)SVERAK LO 40458,(SE)SVERAK LO 34103
+186,Nya's Max Factor,Helig birma (SBI),,Hane,brunmaskad (n),(NO)NRR LO 22284,GIC,(NO)NRR LO 22125 *IMP-GB,(NO)NRR LO 22126 *IMP-GCCF
+187,Boltwood Delysia,Helig birma (SBI),,Hona,brunmaskad (n),(NO)NRR LO 22126 *IMP-GCCF,IC,(GB)GCCF OS 241706,(GB)GCCF NS 012841
+188,IDP*Birminas Stubben,Helig birma (SBI),1979-04-29,Hane,blåmaskad (a),(SE)FBK 5.75E-14  (SE)SVERAK LO 30279,IC,(SE)SVERAK LO 24024,(SE)SNRF B 813
+189,Gimle Beyla,Helig birma (SBI),,Hona,brunmaskad (n),(NO)NRR LO 22231,,(NO)NRR LO 22125 *IMP-GB,(NO)NRR LO 21592
+190,Nya's Ma-Tjong,Helig birma (SBI),,Hane,brunmaskad (n),(NO)NRR LO 60062,IC,(NO)NRR LO 22284,(NO)NRR LO 22126 *IMP-GCCF
+191,Beylas Chiali,Helig birma (SBI),,Hona,brunmaskad (n),(NO)NRR LO 60093,,(SE)SVERAK LO 30279,(NO)NRR LO 22231
+192,Jumaliso's Chang,Helig birma (SBI),1982-12-12,Hane,brunmaskad (n),(NO)NRR LO 60136  (SE)SVERAK LO 40646,,(NO)NRR LO 60062,(NO)NRR LO 60093
+193,Brigitte,Helig birma (SBI),1983-04-19,Hona,blåmaskad (a),(SE)SVERAK LO 40581,,(SE)SVERAK LO 40458,(SE)SVERAK LO 34184
+194,Eldholmen's Chitamo,Helig birma (SBI),1984-06-12,Hane,brunmaskad (n),(SE)SVERAK LO 50303,IC,(SE)SVERAK LO 40646,(SE)SVERAK LO 40581
+195,Hassellidens Yasmine,Helig birma (SBI),1981-02-21,Hona,brunmaskad (n),(SE)SVERAK LO 34186,,(SE)SVERAK LO 24024,(SE)SVERAK LO 24389
+196,Yatzie,Helig birma (SBI),1982-11-10,Hona,brunmaskad (n),(SE)SVERAK LO 40280,,(SE)SVERAK LO 30636,(SE)SVERAK LO 34186
+197,Melizza,Helig birma (SBI),1984-09-15,Hona,brunmaskad (n),(SE)SVERAK LO 50436,,(SE)SVERAK LO 40458,(SE)SVERAK LO 40280
+198,Sinh Xenia af Silverbäcken,Helig birma (SBI),1977-08-14,Hona,brunmaskad (n),(SE)SVERAK LO 24803,,(SE)SVERAK LO 18214,(SE)SVERAK LO 20297
+199,Cheapthrills Camdi,Helig birma (SBI),1978-10-05,Hona,brunmaskad (n),(SE)SVERAK LO 26363,,(SE)SVERAK LO 18790,(SE)SVERAK LO 20786
+200,Rosenkorsborgen Blue Queen,Helig birma (SBI),1978-09-23,Hona,blåmaskad (a),(SE)SVERAK LO 26353,IC,(SE)SVERAK LO 20711,(SE)SVERAK LO 22755
+201,Shai-San-War's Kamé,Helig birma (SBI),1982-04-09,Hona,blåmaskad (a),(SE)SVERAK LO 36976,,(SE)SVERAK LO 24832,(SE)SVERAK LO 24803
+202,Cheapthrills Kim-Ling,Helig birma (SBI),1980-07-27,Hane,brunmaskad (n),(SE)SVERAK LO 32486,CH,(SE)SVERAK LO 24283,(SE)SVERAK LO 26363
+203,Rosenkorsborgen Amorc Prinzess,Helig birma (SBI),1981-10-26,Hona,blåmaskad (a),(SE)SVERAK LO 36698,,(SE)SVERAK LO 26354,(SE)SVERAK LO 26353
+204,Ares,Helig birma (SBI),1984-01-24,Hane,blåmaskad (a),(SE)SVERAK LO 50047,,(SE)SVERAK LO 18790,(SE)SVERAK LO 36976
+205,Fata Morgana Antigone,Helig birma (SBI),1983-02-23,Hona,brunmaskad (n),(SE)SVERAK LO 40416,,(SE)SVERAK LO 32486,(SE)SVERAK LO 36698
+206,Fata Morgana Anti Iljido,Helig birma (SBI),1985-02-13,Hane,blåmaskad (a),(SE)SVERAK LO 50639,EC,(SE)SVERAK LO 50047,(SE)SVERAK LO 40416
+207,Änghagens Beata,Helig birma (SBI),1982-03-04,Hona,brunmaskad (n),(SE)SVERAK LO 36917,,(SE)SVERAK LO 24020,(SE)SVERAK LO 30262
+208,Wärms Filippa,Helig birma (SBI),1985-03-15,Hona,blåmaskad (a),(SE)SVERAK LO 50746,,(SE)SVERAK LO 40233,(SE)SVERAK LO 36917
+209,Cado Eyecatcher,Helig birma (SBI),,Hane,brunmaskad (n),(NO)NRR LO 22125 *IMP-GB,IC,(GB)GCCF OS 266625,(GB)GCCF NS 029429
+210,Missie-San av Drotten,Helig birma (SBI),1977-03-25,Hona,brunmaskad (n),(SE)SVERAK LO 22979,IC,(SE)SVERAK LO 16617,(SE)SVERAK LO 16490
+211,Ami-San av Drotten,Helig birma (SBI),1983-05-15,Hona,brunmaskad (n),(SE)SVERAK LO 40955,,(NO)NRR LO 22284,(SE)SVERAK LO 22979
+212,Muntaz Mahal's Blue Kissipuzz,Helig birma (SBI),1985-08-19,Hona,blåmaskad (a),(SE)SVERAK LO 55055,IC,(SE)SVERAK LO 30636,(SE)SVERAK LO 40955
+213,S*Agapanthus Effet,Helig birma (SBI),1985-05-28,Hane,brunmaskad (n),(SE)SVERAK LO 55118,,(SE)SVERAK LO 40458,(SE)SVERAK LO 34184
+214,Hassellidens Quito,Helig birma (SBI),1980-03-23,Hane,brunmaskad (n),(SE)SVERAK LO 30638,CH,(SE)SVERAK LO 18214,(SE)SVERAK LO 26302
+215,Hassellidens Evita,Helig birma (SBI),1978-09-26,Hona,brunmaskad (n),(SE)SVERAK LO 26330,,(SE)SVERAK LO 24024,(SE)SVERAK LO 16538
+216,Sofiakällans Dorinda,Helig birma (SBI),1983-03-17,Hona,brunmaskad (n),(SE)SVERAK LO 40472,,(SE)SVERAK LO 30638,(SE)SVERAK LO 26330
+217,S*Blidingias Blå Bagera,Helig birma (SBI),1985-06-16,Hona,blåmaskad (a),(SE)SVERAK LO 55193,,(SE)SVERAK LO 40458,(SE)SVERAK LO 40472
+218,Gremlin's Sir Winston,Helig birma (SBI),,Hane,blåmaskad (a),(US)CFA 0186-000059 V109,,(US)CFA 0186-000039 V106,(US)CFA 0183-000081 V105
+219,Bybee's Zaharah,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0187-000132 V109,,(US)CFA 0186-000061 V108,(US)CFA 0187-000010 V104
+220,Purple Heather's Fantastic Boy,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-000463 V0883,,(US)CFA 0182-00226 V109,(US)CFA 0183-000229 V109
+221,Purple Heather's Sweet Betty Lou,Helig birma (SBI),,Hona,brunmaskad (n),(US)ACFA BIOS-F77-455-3  (US)CFA 0183-169518,,(US)CFA 0182-00226 V109,(US)ACFA BIO2-F76-1677-2
+222,Minette,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000433 V111,,(US)CFA 0182-00226 V109,(US)CFA 0183-000229 V109
+223,Cheapthrills Aristo,Helig birma (SBI),1978-01-21,Hane,brunmaskad (n),(SE)SVERAK LO 24843  (US)CFA 0182-000360 V111,,(SE)SVERAK LO 18790,(SE)SVERAK LO 20786
+224,Casa de Amor's Alberta Bouquet,Helig birma (SBI),,Hona,blåmaskad (a),(US)CFA 0187-000187 V1282,,(US)CFA 0186-000059 V109,(US)CFA 0187-000132 V109
+225,Purple Heather's Prince Kokie,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-165707 V0983,,(US)CFA 0182-000463 V0883,(US)CFA 0183-169518
+226,Casa de Amor's Arctic Doll,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-000467 V111,,(US)CFA 0186-000059 V109,(US)CFA 0183-000433 V111
+227,Casa de Amor's Sir Ivanhoe,Helig birma (SBI),,Hane,brunmaskad (n),(US)CFA 0182-140055 V1183,,(US)CFA 0182-000360 V111,(US)CFA 0187-000187 V1282
+228,Casa de Amor's Northern Fantasia,Helig birma (SBI),,Hona,brunmaskad (n),(US)CFA 0183-172100 V0184,,(US)CFA 0182-165707 V0983,(US)CFA 0183-000467 V111
+229,Casa de Amor's Fred Astair,Helig birma (SBI),1983-10-29,Hane,blåmaskad (a),(SE)SVERAK LO 55250  (US)CFA 0186-204947,,(US)CFA 0182-140055 V1183,(US)CFA 0183-172100 V0184
+230,Juveniles Belinda,Helig birma (SBI),1978-12-13,Hona,brunmaskad (n),(SE)SVERAK LO 28007,,(SE)SVERAK LO 24020,(SE)SVERAK LO 20059
+231,Juveniles Mi Lena,Helig birma (SBI),1981-06-19,Hona,brunmaskad (n),(SE)SVERAK LO 36263,,(SE)SVERAK LO 32045,(SE)SVERAK LO 28007
+232,Juveniles Emir,Helig birma (SBI),1986-01-08,Hane,brunmaskad (n),(SE)SVERAK LO 55369,IC,(SE)SVERAK LO 24020,(SE)SVERAK LO 36263
+233,Rallarrosen's Domeniqe,Helig birma (SBI),1984-06-06,Hona,blåmaskad (a),(SE)SVERAK LO 50259,,(SE)SVERAK LO 26354,(SE)SVERAK LO 22861
+234,S*Lyckobringaren's Sinh Delailah,Helig birma (SBI),1986-01-06,Hona,blåmaskad (a),(SE)SVERAK LO 55449,CH,(SE)SVERAK LO 32045,(SE)SVERAK LO 50259
+235,Klosterkattens Fuji-San,Helig birma (SBI),1986-01-09,Hane,blåmaskad (a),(SE)SVERAK LO 55456,IC,(SE)SVERAK LO 40906,(SE)SVERAK LO 34505
+236,Cheapthrills Blue Platina,Helig birma (SBI),1976-08-15,Hona,blåmaskad (a),(SE)SVERAK LO 22704,,(SE)SVERAK LO 20711,(SE)SVERAK LO 20710
+237,Sambos Petite Babiole,Helig birma (SBI),1982-09-02,Hona,blåmaskad (a),(SE)SVERAK LO 40172,IC,(SE)SVERAK LO 30636,(SE)SVERAK LO 22704
+238,Sambos Bambocheur,Helig birma (SBI),1986-01-17,Hane,brunmaskad (n),(SE)SVERAK LO 55489,IP,(SE)SVERAK LO 32877,(SE)SVERAK LO 40172
+239,Beatrix,Helig birma (SBI),1984-01-18,Hona,brunmaskad (n),(SE)SVERAK LO 50043,,(SE)SVERAK LO 30638,(SE)SVERAK LO 16538
+240,Hassellidens Ying,Helig birma (SBI),1986-05-04,Hona,brunmaskad (n),(SE)SVERAK LO 55805,,(SE)SVERAK LO 40458,(SE)SVERAK LO 50043
+241,Cragland Shan,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 244237,CH,(GB)GCCF OS 186204 *IMP,(GB)GCCF OS 208740
+242,Sahra Mischa,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF OS 239202,,(GB)GCCF OS 188501,(GB)GCCF OS 214997
+243,Lynjuka Quintiero,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 144351,,(GB)GCCF NS 106497,(GB)GCCF NS 095824
+244,Boltwood Kathakali,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 094221,,(GB)GCCF OS 241706,(GB)GCCF NS 012841
+245,Sahra Micholo,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 035840,,(GB)GCCF OS 244237,(GB)GCCF OS 239202
+246,Bingmah Bibesko,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 192437,,(GB)GCCF NS 144351,(GB)GCCF NS 094221
+247,Bingmah Fahrena,Helig birma (SBI),1984-05-15,Hona,brunmaskad (n),(GB)GCCF NS 260211  (SE)SVERAK LO 55818,,(GB)GCCF NS 035840,(GB)GCCF NS 192437
+248,Cheapthrills Zebulon,Helig birma (SBI),1986-03-23,Hane,brunmaskad (n),(SE)SVERAK LO 55820,,(SE)SVERAK LO 55250,(SE)SVERAK LO 55818
+249,Chouchou Mystique,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF OS 266625,CH,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF OS 239203
+250,Miorama Petite Fleur,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 012843,,(GB)GCCF OS 244412,(GB)GCCF OS 220933
+251,Monsieur Tiberius,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 092834,,(GB)GCCF NS 024383,(GB)GCCF NS 033760
+252,Belleview Elena,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 117735,,(GB)GCCF NS 091899,(GB)GCCF NS 108983
+253,Patrioona Freya,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 024384,,(GB)GCCF OS 245420,(GB)GCCF OS 245647
+254,Attimore Tanglepaws Tor,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 055329,,(GB)GCCF OS 266625,(GB)GCCF NS 012843
+255,Vanbelma Phersephoni,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 182208,,(GB)GCCF NS 092834,(GB)GCCF NS 117735
+256,Patrioona Delphine,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 034292,,(GB)GCCF OS 244237,(GB)GCCF NS 024384
+257,Vanbelma Valaricki,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 228358,,(GB)GCCF NS 055329,(GB)GCCF NS 182208
+258,Smokeyhill Mit Sue,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 108983,,(GB)GCCF OS 208747 *IMP-D,(GB)GCCF NS 034292
+259,Belleview Blue Romeo,Helig birma (SBI),1985-04-27,Hane,blåmaskad (a),(GB)GCCF NS 296092  (SE)SVERAK LO 55821,,(GB)GCCF NS 228358,(GB)GCCF NS 108983
+260,Amici's Afrodite,Helig birma (SBI),1982-02-20,Hona,blåmaskad (a),(SE)SVERAK LO 36824,,(SE)SVERAK LO 26354,(SE)SVERAK LO 32477
+261,Ambrosia,Helig birma (SBI),1983-04-23,Hona,blåmaskad (a),(SE)SVERAK LO 40554,,(SE)SVERAK LO 24832,(SE)SVERAK LO 36824
+262,Chanel,Helig birma (SBI),1984-05-29,Hona,brunmaskad (n),(SE)SVERAK LO 50208,,(SE)SVERAK LO 24283,(SE)SVERAK LO 40554
+263,Viklandets Henriette,Helig birma (SBI),1986-05-09,Hona,blåmaskad (a),(SE)SVERAK LO 55831,,(SE)SVERAK LO 36020,(SE)SVERAK LO 50208
+264,Chanson Dematin,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 091899,,(GB)GCCF NS 024383,(GB)GCCF NS 035451
+265,Moonrae Mirabelle,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 035451,,(GB)GCCF OS 266625,(GB)GCCF NS 24503
+266,Hilken Red Hercules,Helig birma (SBI),,Hane,rödtabbymaskad (d 21),(GB)GCCF EX 154198,,(GB)GCCF NS 091899,(GB)GCCF NS 048600 SR
+267,Hilken Red Progress,Helig birma (SBI),,Hona,brunsköldpaddmaskad (f),(GB)GCCF EX 154095,,(GB)GCCF NS 091899,(GB)GCCF EX 063812
+268,Hilken Red Goliath,Helig birma (SBI),,Hane,rödtabbymaskad (d 21),(GB)GCCF EX 154411,,(GB)GCCF EX 154198,(GB)GCCF EX 154095
+269,Hilken Cream Debutante,Helig birma (SBI),1984-10-29,Hona,rödtabbymaskad (d 21),(GB)GCCF EX 154730  (SE)SVERAK RX 55873,,(GB)GCCF EX 154411,(GB)GCCF EX 154095
+270,S*Sjöviken's Danny,Helig birma (SBI),1986-07-07,Hane,brunmaskad (n),(SE)SVERAK LO 56083,,(SE)SVERAK LO 32877,(SE)SVERAK LO 36295
+271,Clarelin Tusita,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 106497,,(GB)GCCF OS 255915,(GB)GCCF NS 033319
+272,Shwechinthe Cabora,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 063552,,(GB)GCCF EX 062818,(GB)GCCF NS 048098 SR
+273,Shwechinthe Topaz,Helig birma (SBI),,Hane,chokladmaskad (b),(GB)GCCF EX 065502,,(GB)GCCF EX 062818,(GB)GCCF NS 048098 SR
+274,Shwechinthe Dizzy Doll,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 048503 SR,,(GB)GCCF NS 095642,(GB)GCCF EX 063552
+275,Shwechinthe Deolali,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF EX 154026,,(GB)GCCF NS 094085,(GB)GCCF EX 065758
+276,Ambur Blue Thongwa,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 241784,,(GB)GCCF OS 231433,(GB)GCCF OS 189060
+277,Patrioona Oberon,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 095642,,(GB)GCCF NS 054046,(GB)GCCF NS 033156
+278,Shwechinthe Dervish,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF EX 154021,,(GB)GCCF NS 106497,(GB)GCCF EX 063552
+279,Shwechinthe Esther,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154322,,(GB)GCCF EX 065502,(GB)GCCF NS 048503 SR
+280,Shwechinthe Chindit,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 224668,,(GB)GCCF EX 154026,(GB)GCCF OS 241784
+281,Shwechinthe Ferdinand,Helig birma (SBI),,Hane,chokladmaskad (b),(GB)GCCF EX 154462,,(GB)GCCF EX 154021,(GB)GCCF EX 154322
+282,Shwechinthe Emma,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154464,,(GB)GCCF NS 224668,(GB)GCCF NS 048503 SR
+283,Rocheros Amour,Helig birma (SBI),1984-09-08,Hona,chokladmaskad (b),(GB)GCCF EX 154679  (SE)SVERAK LO 56093,,(GB)GCCF EX 154462,(GB)GCCF EX 154464
+284,Trollehöjds Bailey,Helig birma (SBI),1986-03-31,Hane,brunmaskad (n),(SE)SVERAK LO 56095,GIC,(SE)SVERAK LO 32045,(SE)SVERAK LO 56093
+285,Hilken Red Peril,EJ GODKÄND LÅNGHÅR (XLH),,Hona,svartsköldpaddtabby-vit (f 09 22 (SBI)),(GB)GCCF NS 048600 SR,,(GB)GCCF NS 48342 SR,(GB)GCCF NS 094884
+286,Hilken Red Poppy,EJ GODKÄND KORTHÅR (XSH),,Hona,brunsköldpaddmaskad (f 33 (SBI)),(GB)GCCF EX 063812,,(GB)GCCF NS 091899,(GB)GCCF EX 061787
+287,Red Dawn,EJ GODKÄND KORTHÅR (XSH),,Hona,rödtabby-vit (d 09 22 (SBI)),(GB)GCCF EX 061787,,,
+288,S*Lyckobringaren's Fe-Ra-Ri,Helig birma (SBI),1986-08-09,Hane,blåmaskad (a),(SE)SVERAK LO 56136,,(SE)SVERAK LO 32045,(SE)SVERAK LO 50259
+289,Fjordkattens Blå Optimus,Helig birma (SBI),1980-11-09,Hane,blåmaskad (a),(SE)SVERAK LO 34116,,(SE)SVERAK LO 26354,(SE)SVERAK LO 18722
+290,Tomtebergets Isabella,Helig birma (SBI),1982-11-10,Hona,brunmaskad (n),(SE)SVERAK LO 40330,,(SE)SVERAK LO 30638,(SE)SVERAK LO 16538
+291,Tomtebergets Sabina,Helig birma (SBI),1984-04-17,Hona,brunmaskad (n),(SE)SVERAK LO 50284,,(SE)SVERAK LO 34116,(SE)SVERAK LO 40330
+292,S*Chaldonnay's Aurore,Helig birma (SBI),1986-07-07,Hona,brunmaskad (n),(SE)SVERAK LO 56181,,(SE)SVERAK LO 40458,(SE)SVERAK LO 50284
+293,Hassellidens Pi,Helig birma (SBI),1980-02-14,Hona,brunmaskad (n),(SE)SVERAK LO 30601,,(SE)SVERAK LO 24024,(SE)SVERAK LO 24389
+294,Penelope,Helig birma (SBI),1981-12-01,Hona,brunmaskad (n),(SE)SVERAK LO 36756,,(SE)SVERAK LO 24024,(SE)SVERAK LO 30601
+295,Asteroidernes Artemis,Helig birma (SBI),1983-10-26,Hona,brunmaskad (n),(SE)SVERAK LO 40944,,(SE)SVERAK LO 40458,(SE)SVERAK LO 36756
+296,S*Summerdays Claudius,Helig birma (SBI),1986-07-25,Hane,brunmaskad (n),(SE)SVERAK LO 56184,"EP,,,EC",(SE)SVERAK LO 50019,(SE)SVERAK LO 40944
+297,Söderängens Afrodite,Helig birma (SBI),1979-11-13,Hona,brunmaskad (n),(SE)SVERAK LO 30266,,(SE)SVERAK LO 24283,(SE)SVERAK LO 24819
+298,Fairy Queen's Cindy,Helig birma (SBI),1980-08-18,Hona,brunmaskad (n),(SE)SVERAK LO 32477,,(SE)SVERAK LO 24987 B,(SE)SVERAK LO 28093 A
+299,Cappella,Helig birma (SBI),1982-11-01,Hona,brunmaskad (n),(SE)SVERAK LO 40242,,(SE)SVERAK LO 26354,(SE)SVERAK LO 30266
+300,Viklandets Danny,Helig birma (SBI),1985-03-20,Hane,brunmaskad (n),(SE)SVERAK LO 50787,EC,(SE)SVERAK LO 36020,(SE)SVERAK LO 40242
+301,Desdemona,Helig birma (SBI),1985-07-19,Hona,blåmaskad (a),(SE)SVERAK LO 50951,,(SE)SVERAK LO 34518,(SE)SVERAK LO 36824
+302,S*Ben Guns Conti,Helig birma (SBI),1986-09-14,Hane,blåmaskad (a),(SE)SVERAK LO 56273,IC,(SE)SVERAK LO 50787,(SE)SVERAK LO 50951
+303,Dearing Boy Sioux,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF OS 244412,,(GB)GCCF OS 186204 *IMP,(GB)GCCF OS 200749
+304,Jyaira Cybele,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 135338,,(GB)GCCF NS 015534,(GB)GCCF OS 261894
+305,Sayella Belinda,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 172471,CH,(GB)GCCF NS 075182,(GB)GCCF NS 093754
+306,Laurant Coeur Delyon,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 258221,,(GB)GCCF OS 244412,(GB)GCCF NS 135338
+307,Satinsox Bubbles,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 171657,,(GB)GCCF NS 055329,(GB)GCCF NS 135338
+308,Panjandrum Brocade,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 226159,,(GB)GCCF NS 055329,(GB)GCCF NS 172471
+309,Laurant Kubla Khan,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 294567,,(GB)GCCF NS 258221,(GB)GCCF NS 171657
+310,Panjandrum Fleur,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 297419,,(GB)GCCF NS 258221,(GB)GCCF NS 226159
+311,Panjandrum Idris Gawr,Helig birma (SBI),1986-04-14,Hane,blåmaskad (a),(GB)GCCF CS 016529  (SE)SVERAK LO 56563,EC,(GB)GCCF NS 294567,(GB)GCCF NS 297419
+312,Hassellidens Siska,Helig birma (SBI),1980-06-02,Hona,blåmaskad (a),(SE)SVERAK LO 34176,,(SE)SVERAK LO 24024,(SE)SVERAK LO 22659
+313,Hassellidens Blue Jinnie,Helig birma (SBI),1982-08-20,Hona,blåmaskad (a),(SE)SVERAK LO 40176,,(SE)SVERAK LO 30636,(SE)SVERAK LO 34176
+314,Heligholms Isa-Bella,Helig birma (SBI),1978-05-29,Hona,brunmaskad (n),(SE)SVERAK LO 26310,,(SE)SVERAK LO 20711,(SE)SVERAK LO 22861
+315,Lugnet's Brown Aquilo Yam,Helig birma (SBI),1984-02-24,Hane,brunmaskad (n),(SE)SVERAK LO 50107,CH,(SE)SVERAK LO 40458,(SE)SVERAK LO 40176
+316,Cassandra,Helig birma (SBI),1980-04-06,Hona,brunmaskad (n),(SE)SVERAK LO 32004,,(SE)SVERAK LO 24960 B,(SE)SVERAK LO 26310
+317,Biseros Ranya,Helig birma (SBI),1987-01-10,Hona,brunmaskad (n),(SE)SVERAK LO 56722,,(SE)SVERAK LO 50107,(SE)SVERAK LO 32004
+318,S*Jerkholmens Dexippos,Helig birma (SBI),1987-01-05,Hane,brunmaskad (n),(SE)SVERAK LO 56767,GIC,(SE)SVERAK LO 32877,(SE)SVERAK LO 40067
+319,Namrib Bronzino,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 168767,,(GB)GCCF NS 055329,(GB)GCCF NS 093586
+320,Belleview Blue Chaucer,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 111700,,(GB)GCCF NS 091899,(GB)GCCF NS 053657
+321,Carmo Bianca,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 095842,,(GB)GCCF NS 033060,(GB)GCCF NS 055528
+322,Birchtree Cinnibar,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 211959,,(GB)GCCF NS 134608,(GB)GCCF NS 168767
+323,Stokefield Blue Toyah,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 223616,,(GB)GCCF NS 111700,(GB)GCCF NS 095842
+324,Joyspurr Super Truffles,Helig birma (SBI),1987-01-27,Hane,brunmaskad (n),(GB)GCCF CS 029027  (SE)SVERAK LO 57159,,(GB)GCCF NS 211959,(GB)GCCF NS 223616
+325,Salwana Chee Boo,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 033060,,(GB)GCCF NS 012803,(GB)GCCF OS 238653
+326,Tamara,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 055528,CH,(GB)GCCF OS 223810,(GB)GCCF NS 034289
+327,Menelik Midas,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 092341,,(GB)GCCF NS 033154,(GB)GCCF NS 014643
+328,Marcha Mi Christabelle,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 053710,,(GB)GCCF OS 152530*IMP-F,(GB)GCCF NS 029085
+329,Ciarella Boni Kara,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 093586,CH,(GB)GCCF OS 152530*IMP-F,(GB)GCCF NS 035843
+330,Änghagens Ido,Helig birma (SBI),1985-03-20,Hane,brunmaskad (n),(SE)SVERAK LO 50699,,(SE)SVERAK LO 32877,(SE)SVERAK LO 30262
+331,Rocheros Bertha,Helig birma (SBI),1985-05-12,Hona,chokladmaskad (b),(GB)GCCF CS 010983 EXP  (SE)SVERAK LO 56434,,(GB)GCCF EX 154462,(GB)GCCF EX 154464
+332,Änghagens Nikodemus,Helig birma (SBI),1987-05-16,Hane,brunmaskad (n),(SE)SVERAK LO 57239,,(SE)SVERAK LO 50699,(SE)SVERAK LO 56434
+333,Mandessa Brita,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF NS 048098 SR,,(GB)GCCF NS 023604 SR,(GB)GCCF NS 039673 SR
+334,Marcha Mischief Maker,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 134608,,(GB)GCCF NS 092341,(GB)GCCF NS 053710
+335,Shwechinthe Dainty Dixi,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154150,,(GB)GCCF EX 154026,(GB)GCCF EX 154024
+336,Shwechinthe Eros,Helig birma (SBI),,Hane,lilamaskad (c),(GB)GCCF EX 154585,,(GB)GCCF EX 154026,(GB)GCCF NS 048098 SR
+337,Namrib Jonty,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 225311,,(GB)GCCF NS 134608,(GB)GCCF EX 154150
+338,Shwechinthe Elsa,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154323,,(GB)GCCF EX 154026,(GB)GCCF NS 048503 SR
+339,Namrib Quincy,Helig birma (SBI),,Hane,lilamaskad (c),(GB)GCCF EX 154694,,(GB)GCCF EX 154585,(GB)GCCF NS 225311
+340,Shwechinthe Yoma,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154467,,(GB)GCCF EX 154021,(GB)GCCF EX 154323
+341,Shwechinthe Lashio,Helig birma (SBI),1986-07-17,Hane,chokladmaskad (b),(GB)GCCF CS 021755 EXP  (SE)SVERAK LO 57447,,(GB)GCCF EX 154694,(GB)GCCF EX 154467
+342,Larkrose,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 146050,,(GB)GCCF NS 075182,(GB)GCCF NS 033977
+343,Praha Taw-Tha,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF OS 214997,,(GB)GCCF OS 161638,(GB)GCCF OS 140034
+344,Dubrova Beau Burma,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 075182,,(GB)GCCF NS 024187,(GB)GCCF NS 024801
+345,Princesspolkadot,Perser (PER),,Hona,svarttabby (n 22),(GB)GCCF NS 024000 SR,,,
+346,Jolandi Saphira Bleu,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 207508,,(GB)GCCF NS 055329,(GB)GCCF NS 146050
+347,Sahra Sebastian,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 015534,,(GB)GCCF OS 244412,(GB)GCCF OS 214997
+348,Sibir Zoe,Helig birma (SBI),,Hona,blåtabbymaskad (a 21),(GB)GCCF EX 032696,,(GB)GCCF NS 075182,(GB)GCCF NS 024000 SR
+349,Tamandria Thaddeus,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 259945,,(GB)GCCF NS 055329,(GB)GCCF NS 207508
+350,Lin Lin Kim,Helig birma (SBI),,Hona,blåtabbymaskad (a 21),(GB)GCCF EX 064700,,(GB)GCCF NS 015534,(GB)GCCF EX 032696
+351,Julipaul Justin,Helig birma (SBI),1986-05-11,Hane,blåtabbymaskad (a 21),(GB)GCCF CS 029414 EXP  (SE)SVERAK RX 57479,,(GB)GCCF NS 259945,(GB)GCCF EX 064700
+352,Dar es Salaam's Kaja,Helig birma (SBI),,Hona,brunmaskad (n),(DE)1.DEKZV LO 106041,,(DE)1.DEKZV LO 013126,(DE)1.DEKZV LO 013127
+353,Godolphin's Esquire,Helig birma (SBI),,Hane,brunmaskad (n),(DE)1.DEKZV LO 033633,,(DE)1.DEKZV LO 005564,(DE)1.DEKZV LO 007620
+354,Yasmin v. Rococo Schloss,Helig birma (SBI),,Hona,brunsköldpaddmaskad (f),(DE)1.DEKZV LO 062470,,(DE)1.DEKZV LO 044084,XLH g (SBI) ·
+355,Namrib Quiksilva,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 143247 SR,,(GB)GCCF EX 154585,(GB)GCCF NS 225311
+356,Rocheros Brandy,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF CS 010984 EXP,,(GB)GCCF EX 154462,(GB)GCCF EX 154464
+357,Myinkaba's Shan,Helig birma (SBI),,Hane,blåmaskad (a),(DE)1.DEKZV LO 106042,,(NL)NKS 24-799*IMP-GB,(DE)1.DEKZV LO 106041
+358,Sinfonia von der Soester Boerde,Helig birma (SBI),,Hona,brunsköldpaddmaskad (f),(DE)1.DEKZV LO 075723,,(DE)1.DEKZV LO 033633,(DE)1.DEKZV LO 062470
+359,Rocheros Royal Mint,Helig birma (SBI),1986-04-22,Hane,chokladmaskad (b),(GB)GCCF CS 019451 SR  (SE)SVERAK LO 56979,,(GB)GCCF NS 143247 SR,(GB)GCCF CS 010984 EXP
+360,Fidelis von der Soester Boerde,Helig birma (SBI),1985-09-26,Hona,brunsköldpaddmaskad (f),(DE)1.DEKZV RX 107297  (SE)SVERAK RX 56791,,(DE)1.DEKZV LO 106042,(DE)1.DEKZV LO 075723
+361,Eldholmen's Picasso,Helig birma (SBI),1987-07-29,Hane,rödmaskad (d),(SE)SVERAK LO 57548,,(SE)SVERAK LO 56979,(SE)SVERAK RX 56791
+362,Mandessa Hester,Helig birma (SBI),1986-03-16,Hona,chokladmaskad (b),(GB)GCCF CS 010987 EXP  (SE)SVERAK LO 56934,CH,(GB)GCCF EX 154462,(GB)GCCF EX 154323
+363,Eldholmen's Sunhunter,Helig birma (SBI),1987-09-27,Hane,blåmaskad (a),(SE)SVERAK LO 57663,,(SE)SVERAK LO 50303,(SE)SVERAK LO 56934
+364,Tamandria Truffles,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 182721,,(GB)GCCF NS 055329,(GB)GCCF NS 24285
+365,Shwechinthe Candice,Helig birma (SBI),,Hona,lilamaskad (c),(GB)GCCF EX 154024,,(GB)GCCF EX 062818,(GB)GCCF NS 048098 SR
+366,Shwechinthe Ewok,Helig birma (SBI),,Hane,chokladmaskad (b),(GB)GCCF EX 154465,,(GB)GCCF NS 224668,(GB)GCCF NS 048503 SR
+367,Shwechinthe Jinjarri,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 143218 SR,,(GB)GCCF NS 182721,(GB)GCCF NS 048098 SR
+368,Shwechinthe Kazu,Helig birma (SBI),,Hane,chokladmaskad (b),(GB)GCCF EX 155643,,(GB)GCCF EX 154465,(GB)GCCF NS 143218 SR
+369,Namrib Tyche,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154693,,(GB)GCCF EX 154465,(GB)GCCF EX 154150
+370,Namrib Kytang,Helig birma (SBI),1987-04-02,Hane,chokladmaskad (b),(GB)GCCF CS 032943 EXP  (SE)SVERAK LO 57817,,(GB)GCCF EX 155643,(GB)GCCF EX 154693
+371,Sinh Jamuna af Silverbäcken,Helig birma (SBI),1973-06-30,Hona,brunmaskad (n),(SE)SVERAK LO 18364,,(SE)SVERAK LO 16125,(SE)SVERAK LO 12802
+372,Sinh Iwanica af Silverbäcken,Helig birma (SBI),1979-03-20,Hona,brunmaskad (n),(SE)SVERAK LO 28083,,(SE)SVERAK LO 24283,(SE)SVERAK LO 18364
+373,Kungsbackens Jakobella,Helig birma (SBI),1984-11-10,Hona,brunmaskad (n),(SE)SVERAK LO 50492,,(SE)SVERAK LO 24832,(SE)SVERAK LO 28083
+374,S*Ellagårdens Baltsar,Helig birma (SBI),1987-11-20,Hane,brunmaskad (n),(SE)SVERAK LO 57869,EC,(SE)SVERAK LO 55489,(SE)SVERAK LO 50492
+375,Shwechinthe Endelan,Helig birma (SBI),,Hane,chokladmaskad (b),(GB)GCCF EX 154151,,(GB)GCCF EX 065502,(GB)GCCF NS 048503 SR
+376,Shwechinthe Salween,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 168423,,(GB)GCCF NS 093309,(GB)GCCF OS 241784
+377,Shwechinthe Katha,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 154670,,(GB)GCCF EX 154151,(GB)GCCF NS 168423
+378,Shwechinthe Palai,Helig birma (SBI),,Hona,lilamaskad (c),(GB)GCCF EX 155507,,(GB)GCCF EX 154694,(GB)GCCF EX 154670
+379,Shwechinthe Jedi,Helig birma (SBI),1987-06-13,Hane,chokladmaskad (b),(GB)GCCF CS 042858 EXP  (SE)SVERAK LO 59550,,(GB)GCCF EX 155643,(GB)GCCF EX 155507
+380,Omar Khrishna,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 094085,,(GB)GCCF NS 013169,(GB)GCCF NS 033625
+381,Mandessa Coral,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF EX 065758,,(GB)GCCF EX 062818,(GB)GCCF NS 048099 SR
+382,Shwechinthe Mandessa,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 023604 SR,,(GB)GCCF OS 228528,(GB)GCCF OS 241784
+383,Mandessa Abygail,EJ GODKÄND KORTHÅR (XSH),,Hona,brunmaskad (n 33 (SBI)),(GB)GCCF NS 039673 SR,,(GB)GCCF OS 207550,(GB)GCCF OS 256777
+384,Fillyside Ben Huir,Helig birma (SBI),,Hane,brunmaskad (n),(GB)GCCF NS 094555,CH,(GB)GCCF OS 255915,(GB)GCCF NS 038505
+385,Clarelin Jhana,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 133673,,(GB)GCCF NS 093309,(GB)GCCF NS 106500
+386,Boisland Bellisima,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 094068,,(GB)GCCF NS 034224,(GB)GCCF NS 013205
+387,Clarelin Kasino,Helig birma (SBI),,Hane,blåmaskad (a),(GB)GCCF NS 169125,,(GB)GCCF NS 094555,(GB)GCCF NS 133673
+388,Marcha Mitten,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 225321,,(GB)GCCF NS 092341,(GB)GCCF NS 094068
+389,Lowmita Elsa,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 263430,,(GB)GCCF NS 169125,(GB)GCCF NS 225321
+390,Adreelo Fiery Jack,Helig birma (SBI),1985-06-29,Hane,blåmaskad (a),(GB)GCCF NS 143518 SR  (SE)SVERAK RX 59932,,(GB)GCCF EX 154585,(GB)GCCF NS 263430
+391,Shwechinthe Susie,Helig birma (SBI),,Hona,blåmaskad (a),(GB)GCCF NS 238613,,(GB)GCCF EX 154026,(GB)GCCF EX 154024
+392,Viemora Kapok,Helig birma (SBI),,Hane,lilamaskad (c),(GB)GCCF EX 155658,,(GB)GCCF EX 154694,(GB)GCCF NS 238613
+393,Shwechinthe Abygail,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 261285,,(GB)GCCF NS 211959,(GB)GCCF NS 238613
+394,Shwechinthe Viemora,Helig birma (SBI),,Hona,brunmaskad (n),(GB)GCCF NS 143214 SR,,(GB)GCCF EX 154465,(GB)GCCF NS 261285
+395,Viemora Mellissa,Helig birma (SBI),,Hona,chokladmaskad (b),(GB)GCCF CS 049288 EXP,,(GB)GCCF EX 155658,(GB)GCCF NS 143214 SR
+396,Adixilo Glenholland,Helig birma (SBI),1988-03-14,Hane,chokladmaskad (b),(GB)GCCF CS 061760 EXP  (SE)SVERAK LO 82634,,(SE)SVERAK RX 59932,(GB)GCCF CS 049288 EXP
+397,Archangelsks Vasil,Russian blue (RUS),1970-07-22,Hane,blå (x),(SE)SVERAK LO 15013,IC,(SE)SVERAK LO 9379,(FI)SRK LO 1267
+398,Guldvingens Molly,Russian blue (RUS),1966-05-16,Hona,blå (x),(SE)SVERAK LO 9377,IC,(SE)SVERAK LO 5281,(SE)SVERAK LO 8135
+399,Guldvingens Musse,Russian blue (RUS),1966-05-16,Hane,blå (x),(SE)SVERAK LO 9379,IC,(SE)SVERAK LO 5281,(SE)SVERAK LO 8135
+400,Blue Moon af Mölleby,Russian blue (RUS),1958-05-31,Hona,blå (x),(SE)SVERAK LO 2600,,(SE)SVERAK LO 2293,(SE)SVERAK LO 2599
+401,Astu Fiona,Russian blue (RUS),1969-06-06,Hona,blå (x),(SE)SVERAK LO 12879,,(DK)LDR 6189,(SE)SVERAK LO 10499
+402,Franciszek Michajlow,Russian blue (RUS),1971-08-29,Hane,blå (x),(SE)SVERAK LO 17144,,(SE)SVERAK LO 9379,(SE)SVERAK LO 5249
+403,Dalecarlias Blue Lavendel,Russian blue (RUS),1966-10-16,Hona,blå (x),(SE)SVERAK LO 10193,IC,(SE)SVERAK LO 5281,(SE)SVERAK LO 7523
+404,Guldvingens Felix,Russian blue (RUS),1973-01-14,Hane,blå (x),(SE)SVERAK LO 19459,,(SE)SVERAK LO 15013,(SE)SVERAK LO 9377
+405,Tinnerdalens Grusja,Russian blue (RUS),1969-04-10,Hona,blå (x),(SE)SVERAK LO 12702,,(SE)SVERAK LO 9379,(SE)SVERAK LO 2600
+406,Fjällvinge Alexander,Russian blue (RUS),1972-04-06,Hane,blå (x),(SE)SVERAK LO 17716,,(SE)SVERAK LO 9379,(SE)SVERAK LO 12879
+407,Tricolor Ljubana,Russian blue (RUS),1972-12-03,Hona,blå (x),(SE)SVERAK LO 19285,,(SE)SVERAK LO 17144,(SE)SVERAK LO 10193
+408,Sergej af Solitaire,Russian blue (RUS),1976-05-23,Hane,blå (x),(SE)SVERAK LO 23904,,(SE)SVERAK LO 19459,(SE)SVERAK LO 12702
+409,Skvallergränds Olga Alexandrovna,Russian blue (RUS),1974-12-27,Hona,blå (x),(SE)SVERAK LO 21755,GIC,(SE)SVERAK LO 17716,(SE)SVERAK LO 19285
+410,Skvallergränds Lara,Russian blue (RUS),1977-11-01,Hona,blå (x),(SE)SVERAK LO 27055,EC,(SE)SVERAK LO 23904,(SE)SVERAK LO 21755
+411,Sylphides Topo,Russian blue (RUS),1965-04-24,Hane,blå (x),(GB)GCCF OS 137172  (SE)SVERAK LO 8589,IC,(GB)GCCF OS 117117,(GB)GCCF OS 093774
+412,Kabbarps Iris,Russian blue (RUS),1965-05-19,Hona,blå (x),(SE)SVERAK LO 8318,IC,(SE)SVERAK LO 5707,(SE)SVERAK LO 6320
+413,Bounty-Blue Lefine,Russian blue (RUS),,Hane,blå (x),(GB)GCCF 187564,,(DK)LDR 6189,(DK)LDR 6729
+414,Jennymay Butterfly,Russian blue (RUS),,Hona,blå (x),(GB)GCCF 203757,,(GB)GCCF 186643,(GB)GCCF 161631
+415,Tinnerdalens Tatjana,Russian blue (RUS),1961-12-05,Hona,blå (x),(SE)SVERAK LO 5249,,(SE)SVERAK LO 4442,(SE)SVERAK LO 2600
+416,Astu Grimjor,Russian blue (RUS),1971-01-08,Hane,blå (x),(SE)SVERAK LO 15530,,(SE)SVERAK LO 9379,(SE)SVERAK LO 10499
+417,Mistelgårdens Nadina,Russian blue (RUS),1966-08-12,Hona,blå (x),(SE)SVERAK LO 9500,,(SE)SVERAK LO 5281,(SE)SVERAK LO 7522
+418,Kabbarps Blue Iris,Russian blue (RUS),1968-07-19,Hane,blå (x),(GB)GCCF 186643  (SE)SVERAK LO 12074,,(SE)SVERAK LO 8589,(SE)SVERAK LO 8318
+419,Mindon Annis,Russian blue (RUS),,Hona,blå (x),(GB)GCCF 234861,,(GB)GCCF 187564,(GB)GCCF 203757
+420,Katinka,Russian blue (RUS),1973-07-04,Hona,blå (x),(SE)SVERAK LO 19001,,(SE)SVERAK LO 15530,(SE)SVERAK LO 9500
+421,Jennymay Troika Beau,Russian blue (RUS),1973-06-18,Hane,blå (x),(GB)GCCF OS 260079  (SE)SVERAK LO 18704,IC,(GB)GCCF 186643,(GB)GCCF 234861
+422,Mon Amies Guapa,Russian blue (RUS),1974-01-05,Hona,blå (x),(SE)SVERAK LO 21096,IC,(SE)SVERAK LO 17144,(SE)SVERAK LO 19001
+423,Tormes Beau Aminoff,Russian blue (RUS),1978-04-09,Hane,blå (x),(SE)SVERAK LO 27451,,(SE)SVERAK LO 18704,(SE)SVERAK LO 21096
+424,Rindy's Haven Silver-Ron of Happy Days,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-0485 V104,,(US)CFA 0500-000387 V102,(US)CFA 0501-000371 V102
+425,Emerald Lulubell of Happy Days,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-0649 V104,,(US)CFA 0500-000399,(US)CFA 0501-000324
+426,Astu Dascha,Russian blue (RUS),1967-05-25,Hona,blå (x),(SE)SVERAK LO 10499,,(SE)SVERAK LO 8589,(SE)SVERAK LO 7713
+427,Kabbarps Krista,Russian blue (RUS),1968-07-19,Hona,blå (x),(FI)SRK LO 1267  (SE)SVERAK LO 12081,IC,(SE)SVERAK LO 7888,(SE)SVERAK LO 7176
+428,Happy Days Kosack,Russian blue (RUS),1973-01-26,Hane,blå (x),(SE)SVERAK LO 18609  (US)CFA 0500-000807,,(US)CFA 500-0485 V104,(US)CFA 501-0649 V104
+429,Guldvingens Felicia,Russian blue (RUS),1973-12-06,Hona,blå (x),(SE)SVERAK LO 21082,,(SE)SVERAK LO 15013,(SE)SVERAK LO 9377
+430,Astu Golitsyn,Russian blue (RUS),1971-01-08,Hane,blå (x),(SE)SVERAK LO 15531,,(SE)SVERAK LO 9379,(SE)SVERAK LO 10499
+431,Archangelsks Serebrjanka,Russian blue (RUS),1970-07-22,Hona,blå (x),(SE)SVERAK LO 15015,IC,(SE)SVERAK LO 9379,(FI)SRK LO 1267
+432,Guldvingens Konstantin,Russian blue (RUS),1976-06-11,Hane,blå (x),(SE)SVERAK LO 23890,,(SE)SVERAK LO 18609,(SE)SVERAK LO 21082
+433,Bianka av Heligholm,Russian blue (RUS),1973-04-18,Hona,blå (x),(SE)SVERAK LO 19665,,(SE)SVERAK LO 15531,(SE)SVERAK LO 15015
+434,Heligholms Asko,Russian blue (RUS),1978-06-29,Hane,blå (x),(SE)SVERAK LO 27964,,(SE)SVERAK LO 23890,(SE)SVERAK LO 19665
+435,Blue Misja av Arvidsborg,Russian blue (RUS),1972-08-18,Hona,blå (x),(SE)SVERAK LO 18503,CH,(SE)SVERAK LO 15013,(SE)SVERAK LO 15711
+436,Mästerkattens Silver Nikolaj,Russian blue (RUS),1975-08-16,Hane,blå (x),(SE)SVERAK LO 23185,,(SE)SVERAK LO 17716,(SE)SVERAK LO 18503
+437,Guldvingens Alexander,Russian blue (RUS),1977-01-19,Hane,blå (x),(SE)SVERAK LO 25496,CH,(SE)SVERAK LO 23185,(SE)SVERAK LO 21082
+438,Skvallergränds Jora Alexandrovitj,Russian blue (RUS),1979-01-03,Hane,blå (x),(SE)SVERAK LO 29352,IC,(SE)SVERAK LO 25496,(SE)SVERAK LO 21755
+439,Broadweir Tamaroff,Russian blue (RUS),,Hane,blå (x),(GB)GCCF 188062,,(GB)GCCF 152458,(GB)GCCF 152936
+440,Zatasha Mariska,Russian blue (RUS),,Hona,blå (x),(GB)GCCF 257403,,(GB)GCCF 239787,(GB)GCCF 221061
+441,Sylphides Katerina,Russian blue (RUS),,Hona,blå (x),(GB)GCCF 212276,,(GB)GCCF 145869,(GB)GCCF 190215
+442,Broadweir Valdikler,Russian blue (RUS),,Hane,blå (x),(GB)GCCF NS 020873,,(GB)GCCF 188062,(GB)GCCF 257403
+443,Cadenza Moonwind,Russian blue (RUS),,Hona,blå (x),(GB)GCCF 254806,,(GB)GCCF 186643,(GB)GCCF 212276
+444,Kasheba Blue Wind,Russian blue (RUS),1977-05-10,Hona,blå (x),(GB)GCCF NS 069849  (SE)SVERAK LO 27550,,(GB)GCCF NS 020873,(GB)GCCF 254806
+445,Bam-Bam's Glinka,Russian blue (RUS),1979-02-28,Hona,blå (x),(SE)SVERAK LO 29610,,(SE)SVERAK LO 25496,(SE)SVERAK LO 27550
+446,San-T-Ree Tzarina,Russian blue (RUS),1973-02-17,Hona,blå (x),(SE)SVERAK LO 19536,,(SE)SVERAK LO 15013,(SE)SVERAK LO 15711
+447,Ohl av Olsenburg,Russian blue (RUS),1961-09-16,Hane,blå (x),(SE)SVERAK LO 5281,IC,(SE)SVERAK LO 2295,(SE)SVERAK LO 1714
+448,Marisjka af Braheborg,Russian blue (RUS),1965-02-03,Hona,blå (x),(SE)SVERAK LO 8135,,(SE)SVERAK LO 5707,(SE)SVERAK LO 3782
+449,Skvallergränds Igor Alexandrovitj,Russian blue (RUS),1974-12-27,Hane,blå (x),(SE)SVERAK LO 21754,,(SE)SVERAK LO 17716,(SE)SVERAK LO 19285
+450,Bodas Andruchka,Russian blue (RUS),1975-02-17,Hona,blå (x),(SE)SVERAK LO 21869,,(SE)SVERAK LO 18609,(SE)SVERAK LO 19536
+451,Celemas Benjamin,Russian blue (RUS),1977-05-24,Hane,blå (x),(SE)SVERAK LO 25885,IC,(SE)SVERAK LO 21754,(SE)SVERAK LO 21869
+452,Guldvingens Marina,Russian blue (RUS),1979-07-10,Hona,blå (x),(SE)SVERAK LO 29951,,(SE)SVERAK LO 25885,(SE)SVERAK LO 21082
+453,Ludmilla af Solitaire,Russian blue (RUS),1975-06-01,Hona,blå (x),(SE)SVERAK LO 23271,,(SE)SVERAK LO 19459,(SE)SVERAK LO 12702
+454,Blue Velvet's Katinka,Russian blue (RUS),1979-11-26,Hona,blå (x),(SE)SVERAK LO 31061,,(SE)SVERAK LO 25885,(SE)SVERAK LO 23271
+455,Guldvingens Igor,Russian blue (RUS),1977-01-19,Hane,blå (x),(SE)SVERAK LO 25497,,(SE)SVERAK LO 23185,(SE)SVERAK LO 21082
+456,Skvallergränds Silver Grushenka,Russian blue (RUS),1977-02-02,Hona,blå (x),(SE)SVERAK LO 25555,IC,(SE)SVERAK LO 18704,(SE)SVERAK LO 21755
+457,Rådsbackens Tanja,Russian blue (RUS),1978-05-29,Hona,blå (x),(SE)SVERAK LO 27724,IC,(SE)SVERAK LO 25497,(SE)SVERAK LO 25555
+458,Rådsbackens Andrej,Russian blue (RUS),1980-01-08,Hane,blå (x),(SE)SVERAK LO 31189,"GIP,,,GIC",(SE)SVERAK LO 25885,(SE)SVERAK LO 27724
+459,Guldvingens Tatiana,Russian blue (RUS),1975-11-24,Hona,blå (x),(SE)SVERAK LO 23481,,(SE)SVERAK LO 18609,(SE)SVERAK LO 9377
+460,Skvallergränds Blue Grisha,Russian blue (RUS),1977-02-02,Hane,blå (x),(SE)SVERAK LO 25553,,(SE)SVERAK LO 18704,(SE)SVERAK LO 21755
+461,Mirja,Russian blue (RUS),1977-03-21,Hona,blå (x),(SE)SVERAK LO 25603,,(SE)SVERAK LO 23185,(SE)SVERAK LO 23481
+462,Tarinas Sinj Katinko,Russian blue (RUS),1978-06-04,Hane,blå (x),(SE)SNRF R 105  (SE)SVERAK LO 31257,,(SE)SVERAK LO 25553,(SE)SVERAK LO 25603
+463,Bam-Bam's Julia,Russian blue (RUS),1980-01-22,Hona,blå (x),(SE)SVERAK LO 31270,EC,(SE)SVERAK LO 31257,(SE)SVERAK LO 27550
+464,Guldvingens Boris,Russian blue (RUS),1978-07-27,Hane,blå (x),(SE)SVERAK LO 27904,,(SE)SVERAK LO 25553,(SE)SVERAK LO 21082
+465,Petrowska af Solitaire,Russian blue (RUS),1975-06-01,Hona,blå (x),(SE)SVERAK LO 23273,,(SE)SVERAK LO 19459,(SE)SVERAK LO 12702
+466,Blue Velvet's Serjozja,Russian blue (RUS),1980-06-08,Hane,blå (x),(SE)SVERAK LO 31430,,(SE)SVERAK LO 27904,(SE)SVERAK LO 23273
+467,Tsaritzas Pamina,Russian blue (RUS),1982-04-11,Hona,blå (x),(SE)SVERAK LO 35258,IC,(SE)SVERAK LO 31189,(SE)SVERAK LO 29610
+468,Kitzas Nanovo Andrejevitj,Russian blue (RUS),1982-07-14,Hane,blå (x),(SE)SVERAK LO 35439,EC,(SE)SVERAK LO 31189,(SE)SVERAK LO 31270
+469,Hy-Line's Dr.Zhivago of Tsar Blu,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-0802 V106,,(US)CFA 0500-000423 V105,(US)CFA 0501-000564 V104
+470,Velva's Valerie Fair of Tsar Blu,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-1244 V107,CH,(US)CFA 0500-000739 V106,(US)CFA 0501-00290 V101
+471,Velva's Hallelujah Baby of Sahara,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-0536 V104,,(US)CFA 0500-000356 V102,(US)CFA 501-000377 V102
+472,Tsar Blu's Gingerella,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-1489 V109,CH,(US)CFA 500-0901 V107,(US)CFA 0501-000564 V104
+473,Velva's Viking,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-0330 V102,,(US)CFA 0500-000234 V101,(US)CFA 0501-00290 V101
+474,Velva's Miss Behavin,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-000377 V102,CH,(US)CFA 0500-000234 V101,(US)CFA 0501-00290 V101
+475,Tsar Blu's Fitzwilliam of Velva,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-1255 V109,,(US)CFA 500-0802 V106,(US)CFA 501-1244 V107
+476,Tsar Blu's Zsa Zsa,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-1737 V110,,(US)CFA 500-0536 V104,(US)CFA 501-1489 V109
+477,Velva's Cobalt Baron of Tsar Blu,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-0901 V107,,(US)CFA 500-0330 V102,(US)CFA 501-000377 V102
+478,Tsar Blu's Zabrielle,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-1700 V110,,(US)CFA 500-0802 V106,(US)CFA 501-1244 V107
+479,Tsar Blu's Tsar Glow of Blue Pride,Russian blue (RUS),,Hane,blå (x),(US)CFA 500-1794 V112,,(US)CFA 500-1255 V109,(US)CFA 501-1737 V110
+480,Tsar Blu's Zinnie of Blue Pride,Russian blue (RUS),,Hona,blå (x),(US)CFA 501-2316 V0881,,(US)CFA 500-0901 V107,(US)CFA 501-1700 V110
+481,Blue Pride's Half A Tick,Russian blue (RUS),1981-05-27,Hona,blå (x),(SE)SVERAK LO 39212  (US)CFA 0501-78086,,(US)CFA 500-1794 V112,(US)CFA 501-2316 V0881
+482,Tassebos Neverov,Russian blue (RUS),1983-05-22,Hane,blå (x),(SE)SVERAK LO 35933,CH,(SE)SVERAK LO 39204,(SE)SVERAK LO 31192
+483,Ängvaktarns Bianca,Russian blue (RUS),1981-10-15,Hona,blå (x),(SE)SVERAK LO 39164,CH,(SE)SVERAK LO 31370,(SE)SVERAK LO 31061
+484,Tipitins Chichow,Russian blue (RUS),1985-01-18,Hane,blå (x),(SE)SVERAK LO 43414,CH,(SE)SVERAK LO 35933,(SE)SVERAK LO 39164
+485,Skvallergränds Gawaine,Russian blue (RUS),1982-04-12,Hane,blå (x),(SE)SVERAK LO 35324,"IP,,,CH",(SE)SVERAK LO 35016,(SE)SVERAK LO 21755
+486,Rådsbackens Irina,Russian blue (RUS),1982-11-18,Hona,blå (x),(SE)SVERAK LO 35537,,(SE)SVERAK LO 39204,(SE)SVERAK LO 25555
+487,Tarinas Sinaja Jelena,Russian blue (RUS),1984-05-08,Hona,blå (x),(SE)SVERAK LO 39935,GIC,(SE)SVERAK LO 35324,(SE)SVERAK LO 35537
+488,Ozettas Blue Tarashan,Russian blue (RUS),,Hane,blå (x),(NO)NRR LO 3071,IC,(NO)NRR LO 2601,(NO)NRR LO 1783

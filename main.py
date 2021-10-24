@@ -92,11 +92,6 @@ def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls, p):
 def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls, p):
     # Requests
     print(url)
-    if url in listOfUrls:
-        print("Same url found!")
-        return
-    else:
-        listOfUrls.append(url)
     page = requests.get(url)
     with open('site.html', 'wb+') as f:
         f.write(page.content)
@@ -185,7 +180,7 @@ if __name__ == '__main__':
     counter = getCounter()
     newCats = []
     listOfUrls = []
-    listOfTitles = ["CH", "P", "IC", "IP", "GIC", "GIP", "EC", "EP", "SC", "SP", "JW", "DSM", "DVM", "NW", "WW", "RW", "Int.", "Ch", "Cham", "RW", "CH", "GCH", "DGCH", "TGCH", "QGCH"]
+    listOfTitles = ["CH", "P", "IC", "IP", "GIC", "GIP", "EC", "EP", "SC", "SP", "JW", "DSM", "DVM", "NW", "WW", "RW", "Int.", "Ch", "Cham", "RW", "CH", "GCH", "DGCH", "TGCH", "QGCH", ","]
     p = re.compile(r'\b(?:%s)\b' % '|'.join(listOfTitles)) #For regex searching
     print("Welcome to the cat retrieval program")
     print("Current counter is " + str(counter))
@@ -202,14 +197,25 @@ if __name__ == '__main__':
             print("How many cats do we take ?")
             amount = input()
             if(input1 == "2" and input2 == "1"):
-                for x in range(int(amount)):
-                    url = incrementPage(baseUrl, counter)
-                    counter = incrementCounter(counter)
-                    time.sleep(3)
-                    getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
-                newCats = pandas.DataFrame(newCats)
+                try:
+                    for x in range(int(amount)):
+                        url = incrementPage(baseUrl, counter)
+                        counter = incrementCounter(counter)
+                        time.sleep(5)
+                        getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
+                        if counter % 100 == 0:
+                            print("Saving cats")
+                            newCatsFrame = pandas.DataFrame(newCats)
+                            cats = cats.append(newCatsFrame, ignore_index=True)
+                            cats.to_csv('cat.csv', mode='w', encoding="utf-8")
+                            cats = pandas.read_csv("cat.csv", index_col=0)
+                            newCats.clear()
+                            writeCounter(counter)
+                except:
+                    print("Error during retrieval, saving changes")
+                newCatsFrame = pandas.DataFrame(newCats)
                 # print(newCats)
-                cats = cats.append(newCats, ignore_index=True)
+                cats = cats.append(newCatsFrame, ignore_index=True)
                 cats.to_csv('cat.csv', mode='w', encoding="utf-8")
                 # read_cats()
                 file.close()
