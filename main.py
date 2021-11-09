@@ -138,12 +138,16 @@ def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls, p):
     return
 
 def check_for_csv():
-    if not os.path.exists("cat.csv"):
-        df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Title', 'Father', 'Mother'])
-        df.to_csv('cat.csv', mode='w')
+    highestCSV = 0
+    while (1):
+        fileName = "cat" + str(highestCSV + 1) + ".csv"
+        if not os.path.exists(fileName):
+            break
+        highestCSV= highestCSV + 1
     if not os.path.exists("counter.txt"):
         f = open('counter.txt', 'w')
         f.write('%d' % 1)
+    return highestCSV
 
 def getCounter():
     f = open('counter.txt', 'r')
@@ -173,6 +177,11 @@ def checkTotalCats():
     catNumber = catNumber.replace(u'\xa0', '')
     return(int(catNumber))
 
+
+def create_new_csv(maxCSV):
+    df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Title', 'Father', 'Mother'])
+    df.to_csv('cat' + str(maxCSV + 1) + '.csv', mode='w')
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #Test Urls
@@ -183,7 +192,7 @@ if __name__ == '__main__':
     url4 = "http://stambok.sverak.se/Stambok/Visa/90763"
     urlBad = "http://stambok.sverak.se/Stambok/Visa/1"
     file = open("cat.txt", 'a', encoding="utf-8")
-    check_for_csv()
+    csvAmount = check_for_csv()
     cats = pandas.read_csv("cat.csv", index_col=0)
     counter = getCounter()
     newCats = []
@@ -194,6 +203,7 @@ if __name__ == '__main__':
     totalCats = checkTotalCats()
     print("Welcome to the cat retrieval program")
     print("The site currently has " + str(totalCats) + " total cats.")
+    print("We currently have " + str(csvAmount) + " csv files.")
     print("Current counter is " + str(counter))
     print("Choose wisely")
     print("Option 1: Input a Link")
@@ -252,8 +262,14 @@ if __name__ == '__main__':
         else:
             print("Invalid Value")
     elif(input1 == "3"):
+        print("Taking cats from counter until stopped")
         try:
-            while(1):
+            # TODO BETTER ESTIMATE OF CATS
+            print("Creating new CSV")
+            create_new_csv(csvAmount)
+            csvAmount = csvAmount + 1
+            while(counter in range(totalCats + 50000)):
+                cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
                 url = incrementPage(baseUrl, counter)
                 counter = incrementCounter(counter)
                 time.sleep(3)
@@ -262,10 +278,15 @@ if __name__ == '__main__':
                     print("Saving cats")
                     newCatsFrame = pandas.DataFrame(newCats)
                     cats = cats.append(newCatsFrame, ignore_index=True)
-                    cats.to_csv('cat.csv', mode='w', encoding="utf-8")
-                    cats = pandas.read_csv("cat.csv", index_col=0)
+                    cats.to_csv('cat' + str(csvAmount) + ".csv", mode='w', encoding="utf-8")
+                    cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
                     newCats.clear()
                     writeCounter(counter)
+                    if counter % 1000 == 0:
+                        print("Creating new CSV")
+                        create_new_csv(csvAmount)
+                        csvAmount = csvAmount + 1
+                        cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
                     time.sleep(15)
         except:
             print("Error during retrieval, saving changes")
