@@ -7,6 +7,7 @@ import pandas
 import os
 import time
 import re
+from random import randint
 
 def getCatAttributes(url,cats, newCats, baseUrl, listOfUrls, p):
     # Requests
@@ -272,7 +273,7 @@ if __name__ == '__main__':
                 cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
                 url = incrementPage(baseUrl, counter)
                 counter = incrementCounter(counter)
-                time.sleep(3)
+                time.sleep(randint(2,5))
                 getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
                 if counter % 100 == 0:
                     print("Saving cats")
@@ -287,7 +288,9 @@ if __name__ == '__main__':
                         create_new_csv(csvAmount)
                         csvAmount = csvAmount + 1
                         cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
-                    time.sleep(15)
+                        if counter % 10000 == 0:
+                            time.sleep(randint(100,200))
+                    time.sleep(randint(10,20))
         except:
             print("Error during retrieval, saving changes")
         newCatsFrame = pandas.DataFrame(newCats)
