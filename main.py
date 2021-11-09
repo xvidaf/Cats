@@ -164,9 +164,17 @@ def writeCounter(counter):
     f.write('%d' % int(counter))
     f.close()
 
+
+def checkTotalCats():
+    mainPage = requests.get("http://stambok.sverak.se/")
+    soup = BeautifulSoup(mainPage.text, 'html.parser')
+    catText = soup.find("div", {"class": "findUsWelcome"})
+    catNumber = catText.find('b').text
+    catNumber = catNumber.replace(u'\xa0', '')
+    return(int(catNumber))
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    #TODO CHECK IF CAT IS ALREADY IN
     #Test Urls
     baseUrl = "http://stambok.sverak.se"
     url1 = "http://stambok.sverak.se/Stambok/Visa/538"
@@ -182,11 +190,15 @@ if __name__ == '__main__':
     listOfUrls = []
     listOfTitles = ["CH", "P", "IC", "IP", "GIC", "GIP", "EC", "EP", "SC", "SP", "JW", "DSM", "DVM", "NW", "WW", "RW", "Int.", "Ch", "Cham", "RW", "CH", "GCH", "DGCH", "TGCH", "QGCH", ","]
     p = re.compile(r'\b(?:%s)\b' % '|'.join(listOfTitles)) #For regex searching
+    #Find the total amount of cats
+    totalCats = checkTotalCats()
     print("Welcome to the cat retrieval program")
+    print("The site currently has " + str(totalCats) + " total cats.")
     print("Current counter is " + str(counter))
     print("Choose wisely")
     print("Option 1: Input a Link")
     print("Option 2: Continue from counter")
+    print("Option 3: Final Version")
     input1 = input()
     if(input1 == "1" or input1 == "2"):
         print("Choose retrieval type")
@@ -201,7 +213,7 @@ if __name__ == '__main__':
                     for x in range(int(amount)):
                         url = incrementPage(baseUrl, counter)
                         counter = incrementCounter(counter)
-                        time.sleep(5)
+                        time.sleep(3)
                         getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
                         if counter % 100 == 0:
                             print("Saving cats")
@@ -211,6 +223,7 @@ if __name__ == '__main__':
                             cats = pandas.read_csv("cat.csv", index_col=0)
                             newCats.clear()
                             writeCounter(counter)
+                            time.sleep(15)
                 except:
                     print("Error during retrieval, saving changes")
                 newCatsFrame = pandas.DataFrame(newCats)
@@ -238,6 +251,32 @@ if __name__ == '__main__':
 
         else:
             print("Invalid Value")
+    elif(input1 == "3"):
+        try:
+            while(1):
+                url = incrementPage(baseUrl, counter)
+                counter = incrementCounter(counter)
+                time.sleep(3)
+                getCatAttributesSingle(url, cats, newCats, baseUrl, listOfUrls, p)
+                if counter % 100 == 0:
+                    print("Saving cats")
+                    newCatsFrame = pandas.DataFrame(newCats)
+                    cats = cats.append(newCatsFrame, ignore_index=True)
+                    cats.to_csv('cat.csv', mode='w', encoding="utf-8")
+                    cats = pandas.read_csv("cat.csv", index_col=0)
+                    newCats.clear()
+                    writeCounter(counter)
+                    time.sleep(15)
+        except:
+            print("Error during retrieval, saving changes")
+        newCatsFrame = pandas.DataFrame(newCats)
+        # print(newCats)
+        cats = cats.append(newCatsFrame, ignore_index=True)
+        cats.to_csv('cat.csv', mode='w', encoding="utf-8")
+        # read_cats()
+        file.close()
+        writeCounter(counter)
+
     else:
         print("Invalid Value")
 
