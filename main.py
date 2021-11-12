@@ -1,8 +1,5 @@
-import pandas as pandas
-from selenium import webdriver # Could be used if i need to emulate web browsing ?
 from bs4 import BeautifulSoup # Parsing html
 import requests #Easy, juts gets the source
-import openpyxl #Writing to excel
 import pandas
 import os
 import time
@@ -107,19 +104,30 @@ def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls, p):
     catName = soup.select('h1.border')[0].text.strip()
     catAttributes = soup.find_all(class_='display-field')
     # Get The father Name
-    father = soup.find('td', class_={re.compile('.*parent tree-row-odd CatNode.*'), re.compile('.*parent tree-row-odd UnknownNode.*')})
-    mother = soup.find('td', class_={re.compile('.*parent tree-row-even CatNode.*'),re.compile('.*parent tree-row-even UnknownNode.*')})
-    fatherLink = father.find('a', href=True)
-    motherLink = mother.find('a', href=True)
-    fatherName = ' '.join(father.text.splitlines()[-2].split())  # Split the id from the string and remove tab
-    motherName = ' '.join(mother.text.splitlines()[-2].split())  # Split the id from the string and remove tab
+    # TODO TEMP FOR LINUX
+    #father = soup.find('td', class_={re.compile('.*parent tree-row-odd CatNode.*'), re.compile('.*parent tree-row-odd UnknownNode.*')})
+    #mother = soup.find('td', class_={re.compile('.*parent tree-row-even CatNode.*'),re.compile('.*parent tree-row-even UnknownNode.*')})
+    #fatherLink = father.find('a', href=True)
+    #motherLink = mother.find('a', href=True)
+    #fatherName = ' '.join(father.text.splitlines()[-2].split())  # Split the id from the string and remove tab
+    #motherName = ' '.join(mother.text.splitlines()[-2].split())  # Split the id from the string and remove tab
     try:
+        father = soup.find('td', class_={re.compile('.*parent tree-row-odd CatNode.*'),
+                                         re.compile('.*parent tree-row-odd UnknownNode.*')})
+        #father = soup.find('td', {"class" : "parent tree-row-odd CatNode"})
+        fatherLink = father.find('a', href=True)
+        fatherName = ' '.join(father.text.splitlines()[-2].split())
         print(fatherLink['href'])
         print(fatherName)
     except:
         print("Macka nema Father")
         fatherName = ""
     try:
+        mother = soup.find('td', class_={re.compile('.*parent tree-row-even CatNode.*'),
+                                         re.compile('.*parent tree-row-even UnknownNode.*')})
+        #mother = soup.find('td', {"class" : "parent tree-row-even CatNode"})
+        motherLink = mother.find('a', href=True)
+        motherName = ' '.join(mother.text.splitlines()[-2].split())
         print(motherLink['href'])
         print(motherName)
     except:
@@ -133,7 +141,8 @@ def getCatAttributesSingle(url,cats, newCats, baseUrl, listOfUrls, p):
         'Number' : catAttributes[4].text.strip().replace("\n", " ").replace("\r", " "),
         'Title' : ",".join(re.findall(p, soup.select('h1.border')[0].text.strip())),
         'Father' : fatherName,
-        'Mother' : motherName})
+        'Mother' : motherName,
+        'From' : "Sverak"})
     newCats.append(newRow)
     #print(newRow)
     return
@@ -180,8 +189,22 @@ def checkTotalCats():
 
 
 def create_new_csv(maxCSV):
-    df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Title', 'Father', 'Mother'])
+    df = pandas.DataFrame(columns=['Name', 'Breed', 'Birth', 'Gender', 'Fur', 'Number', 'Title', 'Father', 'Mother', 'From'])
     df.to_csv('cat' + str(maxCSV + 1) + '.csv', mode='w')
+
+
+def changeCSVOrder():
+    cols = ["Name", "Breed", "Birth", "Gender", "Fur", "Number", "Title", "Father", "Mother", "From"]
+    highestCSV = 0
+    while (1):
+        fileName = "Cats\cat" + str(highestCSV + 1) + ".csv"
+        if not os.path.exists(fileName):
+            break
+        print("Reordering" + str(highestCSV + 1))
+        toChange = pandas.read_csv(fileName, index_col=0, encoding="utf-8")
+        toChange = toChange[cols]
+        toChange.to_csv('Reordered\cat' + str(highestCSV + 1) + ".csv", mode='w', encoding="utf-8")
+        highestCSV= highestCSV + 1
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -192,7 +215,7 @@ if __name__ == '__main__':
     url3 = "http://stambok.sverak.se/Stambok/Visa/204563"
     url4 = "http://stambok.sverak.se/Stambok/Visa/90763"
     urlBad = "http://stambok.sverak.se/Stambok/Visa/1"
-    file = open("cat.txt", 'a', encoding="utf-8")
+    #file = open("cat.txt", 'a', encoding="utf-8")
     csvAmount = check_for_csv()
     cats = pandas.read_csv("cat.csv", index_col=0)
     counter = getCounter()
@@ -210,6 +233,7 @@ if __name__ == '__main__':
     print("Option 1: Input a Link")
     print("Option 2: Continue from counter")
     print("Option 3: Final Version")
+    print("Option 4: Reorder Downloaded Cats")
     input1 = input()
     if(input1 == "1" or input1 == "2"):
         print("Choose retrieval type")
@@ -242,7 +266,7 @@ if __name__ == '__main__':
                 cats = cats.append(newCatsFrame, ignore_index=True)
                 cats.to_csv('cat.csv', mode='w', encoding="utf-8")
                 # read_cats()
-                file.close()
+                #file.close()
                 writeCounter(counter)
             elif (input1 == "2" or input2 == "2"):
                 for x in range(int(amount)):
@@ -255,7 +279,7 @@ if __name__ == '__main__':
                 cats = cats.append(newCats, ignore_index=True)
                 cats.to_csv('cat.csv', mode='w', encoding="utf-8")
                 # read_cats()
-                file.close()
+                #file.close()
                 writeCounter(counter)
             else:
                 print("Not implemented yet, stay tuned")
@@ -265,7 +289,7 @@ if __name__ == '__main__':
     elif(input1 == "3"):
         print("Taking cats from counter until stopped")
         try:
-            # TODO BETTER ESTIMATE OF CATS
+            #  TODO BETTER ESTIMATE OF CATS
             print("Creating new CSV")
             create_new_csv(csvAmount)
             csvAmount = csvAmount + 1
@@ -280,7 +304,14 @@ if __name__ == '__main__':
                     newCatsFrame = pandas.DataFrame(newCats)
                     cats = cats.append(newCatsFrame, ignore_index=True)
                     cats.to_csv('cat' + str(csvAmount) + ".csv", mode='w', encoding="utf-8")
-                    cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
+                    try:
+                        cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
+                    except:
+                        print("Failed reading the csv(linux error?), creating new CSV")
+                        print("Creating new CSV")
+                        create_new_csv(csvAmount)
+                        csvAmount = csvAmount + 1
+                        cats = pandas.read_csv('cat' + str(csvAmount) + '.csv', index_col=0)
                     newCats.clear()
                     writeCounter(counter)
                     if counter % 1000 == 0:
@@ -291,16 +322,19 @@ if __name__ == '__main__':
                         if counter % 10000 == 0:
                             time.sleep(randint(100,200))
                     time.sleep(randint(10,20))
-        except:
+        except Exception as e:
             print("Error during retrieval, saving changes")
+            print(e)
+            raise
         newCatsFrame = pandas.DataFrame(newCats)
         # print(newCats)
         cats = cats.append(newCatsFrame, ignore_index=True)
         cats.to_csv('cat.csv', mode='w', encoding="utf-8")
         # read_cats()
-        file.close()
+        #file.close()
         writeCounter(counter)
-
+    elif(input1 == "4"):
+        changeCSVOrder()
     else:
         print("Invalid Value")
 
