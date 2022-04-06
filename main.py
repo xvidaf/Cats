@@ -285,7 +285,7 @@ def changeCSVOrder():
         toChange.to_csv('Reordered\cat' + str(highestCSV + 1) + ".csv", mode='w', encoding="utf-8")
         highestCSV = highestCSV + 1
 
-def uploadCatsToDatabase():
+def uploadCatsToDatabase(path="D:\Reordered"):
     try:
         conn = psycopg2.connect(
             host="localhost",
@@ -295,15 +295,14 @@ def uploadCatsToDatabase():
             port="5433")
         cur = conn.cursor()
         highestCSV = 0
-        #TODO remove the 10 limit, should work by default
         while (1):
-            fileName = "Cats\cat" + str(highestCSV + 1) + ".csv"
-            if not os.path.exists(fileName) or highestCSV == 10:
+            fileName = path + "\cat" + str(highestCSV + 1) + ".csv"
+            #if not os.path.exists(fileName) or highestCSV == 10:
+            if not os.path.exists(fileName):
                 break
             print("Uploading" + str(highestCSV + 1))
-            #TODO change from absolute path if possible
             cur.execute(
-                "COPY catapp_cat(internalid,name,breed,birth,gender,fur,number,title,father,mother,site) FROM" + " 'D:\Reordered\cat" + str(highestCSV + 1) + ".csv'" + " ENCODING 'UTF8' DELIMITER ',' CSV HEADER;")
+                "COPY catapp_cat(internalid,name,breed,birth,gender,fur,number,title,father,mother,site) FROM " + "'" + path + "\cat" + str(highestCSV + 1) + ".csv'" + " ENCODING 'UTF8' DELIMITER ',' CSV HEADER;")
             conn.commit()
             highestCSV = highestCSV + 1
 
@@ -347,6 +346,7 @@ if __name__ == '__main__':
     print("Option 2: Get a Cat's Pedigree")
     print("Option 3: Continue from counter")
     print("Option 4: Reorder Downloaded Cats")
+    print("Option 5: Upload cats to the database")
     input1 = input()
     if (input1 == "1"):
         print("Input Link:")
@@ -424,7 +424,10 @@ if __name__ == '__main__':
     elif (input1 == "4"):
         changeCSVOrder()
     elif (input1 == "5"):
-        uploadCatsToDatabase()
+        print("Enter a path to the cat .csv files.")
+        print("Example path 'D:\Reordered\cat")
+        input2 = input()
+        uploadCatsToDatabase(input2)
     else:
         print("Invalid Value")
 
