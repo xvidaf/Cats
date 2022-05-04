@@ -302,14 +302,15 @@ def uploadCatsToDatabase(path="D:\Reordered"):
                 break
             print("Uploading" + str(highestCSV + 1))
             cur.execute(
-                "COPY catapp_cat(internalid,name,breed,birth,gender,fur,number,title,father,mother,site) FROM " + "'" + path + "\cat" + str(highestCSV + 1) + ".csv'" + " ENCODING 'UTF8' DELIMITER ',' CSV HEADER;")
+                "COPY catapp_cat(internalid,name,breed,birth,gender,fur,number,title,father,mother,site) FROM " +
+                "'" + path + "\cat" + str(highestCSV + 1) + ".csv'" + " ENCODING 'UTF8' DELIMITER ',' CSV HEADER;")
             conn.commit()
             highestCSV = highestCSV + 1
 
         cur.close()
     except:
         print("Error")
-        raise
+
 
 
 # Press the green button in the gutter to run the script.
